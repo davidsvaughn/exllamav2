@@ -1,0 +1,13 @@
+### Instruction
+A student is writing an essay.  Please give feedback on the following excerpt from the essay.  Don't be concerned with factual correctness.  Instead, focus on helping the student to improve her writing.  Point out a problem you noticed, and/or give a suggestion for how the student could fix the problem, but avoid actually rewriting the section yourself.  Please keep your response short and limit it to only one or two sentences at the most.
+Here is the excerpt:     
+Have you ever wondered how other animals communicate? Well then, lets learn other things about them!     
+
+
+### Context
+Here is the excerpt shown in the larger context of the essay.  The excerpt under scrutiny has been enclosed in brackets.  Please focus your feedback on the excerpt only, and not on the essay as a whole.
+Here is the context:     
+ [ Have you ever wondered how other animals communicate? Well then, lets learn other things about them! ]  For example dogs! You might know their as companions, for protection, or for eating food. Well, they are actually very unique animals and you don't know them as a person. Not quite, but they are very unique animals. Dogs are very close to a human.     
+
+
+### Answer

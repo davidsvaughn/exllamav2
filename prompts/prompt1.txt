@@ -1,0 +1,13 @@
+### Instruction
+A student is writing an essay.  Please give feedback on the following excerpt from the essay.  Don't be concerned with factual correctness.  Instead, focus on helping the student to improve her writing.  Point out a problem you noticed, and/or give a suggestion for how the student could fix the problem, but avoid actually rewriting the section yourself.  Please keep your response short and limit it to only one or two sentences at the most.
+Here is the excerpt:     
+Today i wrote and essay about weither or not you should keep tresures you find in the waters.     
+
+
+### Context
+Here is the excerpt shown in the larger context of the essay.  The excerpt under scrutiny has been enclosed in brackets.  Please focus your feedback on the excerpt only, and not on the essay as a whole.
+Here is the context:     
+ [ Today i wrote and essay about weither or not you should keep tresures you find in the waters. ]  I thought to use the sunken ship treasure as part of this essay because now everyone knows that they are there. They may think about getting there tresour but how will they know what to do with it. There are certain rules that govern how they can legally obtain those treasures. If they dont follow the set rules the government can bring charges against them and make sure they do not get tresours anymore. That makes sense.     
+
+
+### Answer
