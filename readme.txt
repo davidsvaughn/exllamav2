@@ -25,13 +25,8 @@ sudo apt install python3.9-dev
 ------------------------------------------------
 
 virtualenv -p python3.9 venv && source venv/bin/activate
-mkdir code && cd code
 
-git clone https://github.com/davidsvaughn/exllamav2
-# git clone https://github.com/turboderp/exllamav2
-
-# local
-rsync -azP -e "ssh -i $LAMBDA_PEM" /home/david/code/davidsvaughn/LLM-utils/exllamav2/*.* $LIP:/home/ubuntu/code
+git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
 
 pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
 
@@ -51,7 +46,6 @@ python llama2_save.py
 
 bash quantize.sh
 
-cd exllamav2
 python test_inference.py -m /home/ubuntu/code/qmodels/llamav2-7b-3.0bpw -p "prompts/prompt3.txt"
 
 

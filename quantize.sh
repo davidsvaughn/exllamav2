@@ -14,7 +14,7 @@ set -eEuo pipefail
 ## Edit these values below
 ########################################################################
 
-bits="4.0"
+bits="4.65"
 model_dir="/home/ubuntu/code/davidsvaughn/llamav2-70b-merged"
 quant_dir="/home/ubuntu/code/qmodels/llamav2-70b-${bits}bpw"
 
@@ -30,7 +30,8 @@ ppl_file="0007.parquet"
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # ex_dir=$(dirname "$SCRIPT_DIR")
-ex_dir="$SCRIPT_DIR"/exllamav2
+# ex_dir="$SCRIPT_DIR"/exllamav2
+ex_dir=$SCRIPT_DIR
 
 # Save measurements.json to this file for subsequent reuse
 measurement_file="$ex_dir/measurement-$(basename $model_dir).json"
