@@ -51,7 +51,7 @@ if args.prompt:
         text = args.prompt
 
         # if text is a file, load text from file
-        if text.endswith('.txt') and os.file.exists(text):
+        if text.endswith('.txt') and os.path.exists(text):
             with open(text) as f:
                 text = f.read()
 
