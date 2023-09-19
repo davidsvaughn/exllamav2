@@ -48,7 +48,14 @@ if args.prompt:
 
         cache = ExLlamaV2Cache(model)
 
-        ids = tokenizer.encode(args.prompt)
+        text = args.prompt
+
+        # if text is a file, load text from file
+        if text.endswith('.txt') and os.file.exists(text):
+            with open(text) as f:
+                text = f.read()
+
+        ids = tokenizer.encode(text)
         tokens_prompt = ids.shape[-1]
 
         print(f" -- Warmup...")
@@ -57,7 +64,7 @@ if args.prompt:
 
         print(f" -- Generating (greedy sampling)...")
         print()
-        print(args.prompt, end = "")
+        print(text, end = "")
         sys.stdout.flush()
 
         time_begin = time.time()
