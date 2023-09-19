@@ -1,6 +1,25 @@
 pandas
-ninja
+# ninja
 fastparquet
-torch>=2.0.1
+# torch>=2.0.1
 safetensors>=0.3.2
-sentencepiece>=0.1.97
+# sentencepiece>=0.1.97
+
+
+transformers>=4.31.0
+peft==0.4.0
+# accelerate==0.21.0
+# bitsandbytes==0.40.2
+# safetensors>=0.3.1
+# tokenizers==0.13.3
+# datasets>=2.9.0
+# matplotlib
+# scipy
+# loralib
+### flash attn
+# trl==0.4.7
+ninja>=1.11.1
+# packaging
+sentencepiece>=0.1.99
+# protobuf>=4.24.2
+# typing-extensions==4.6.2
