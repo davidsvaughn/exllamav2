@@ -100,7 +100,8 @@ time_begin = time.time()
 
 sep = '\n' # '###'
 responses = []
-for _ in range(args.num_samples):
+n = args.num_samples
+for _ in range(n):
     output = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
     response = output[len(prompt):].strip()
     response = response.split(sep)[0]
@@ -114,4 +115,4 @@ print('--------->')
 for i,response in enumerate(responses):
     print(f"{i}.\t{response}")
 print('<---------')
-print(f"Responses generated in {time_total:.2f} seconds, {max_new_tokens} tokens, {max_new_tokens / time_total:.2f} tokens/second")
+print(f"Responses generated in {time_total:.2f} seconds, {n*max_new_tokens} tokens, {n*max_new_tokens / time_total:.2f} tokens/second")
