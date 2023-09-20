@@ -18,9 +18,9 @@ bits="3.0"
 model_dir="/home/ubuntu/exllamav2/davidsvaughn/llamav2-70b-merged"
 quant_dir="/home/ubuntu/exllamav2/qmodels/llamav2-70b-${bits}bpw"
 
-ppl_file="wikitext-train-00000-of-00002.parquet"
+# ppl_file="wikitext-train-00000-of-00002.parquet"
 # ppl_file="wikitext-test.parquet"
-# ppl_file="0007.parquet"
+ppl_file="0007.parquet"
 
 # bits="4.65"
 # quant_dir="${model_dir}-${bits}bpw"
