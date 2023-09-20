@@ -98,6 +98,10 @@ if args.prompt:
     print(f"Prompt processed in {total_prompt:.2f} seconds, {tokens_prompt} tokens, {tokens_prompt / total_prompt:.2f} tokens/second")
     print(f"Response generated in {total_gen:.2f} seconds, {args.tokens} tokens, {args.tokens / total_gen:.2f} tokens/second")
 
+    num_words = len(text.split())
+    tw_ratio = tokens_prompt/num_words
+    print(f"#tokens/#words ratio = {tw_ratio:.2f}")
+
     cache = None
 
 
