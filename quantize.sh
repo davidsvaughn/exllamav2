@@ -14,7 +14,7 @@ set -eEuo pipefail
 ## Edit these values below
 ########################################################################
 
-bits="4.65"
+bits="3.0"
 model_dir="/home/ubuntu/code/davidsvaughn/llamav2-70b-merged"
 quant_dir="/home/ubuntu/code/qmodels/llamav2-70b-${bits}bpw"
 
