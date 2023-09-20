@@ -36,12 +36,18 @@ else: # 13b, 70b
     #     device_map={"": 0},
     # )
 
-    from peft import AutoPeftModelForCausalLM
-    model = AutoPeftModelForCausalLM.from_pretrained(
-        adapter_name,
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        device_map='auto',
         low_cpu_mem_usage=True,
-        torch_dtype=torch.float16,
     )
+
+    # from peft import AutoPeftModelForCausalLM
+    # model = AutoPeftModelForCausalLM.from_pretrained(
+    #     adapter_name,
+    #     low_cpu_mem_usage=True,
+    #     torch_dtype=torch.float16,
+    # )
 
     # from transformers import BitsAndBytesConfig
     # quantization_config = BitsAndBytesConfig(
@@ -61,7 +67,7 @@ else: # 13b, 70b
     # )
 
 print(f"\nStep {step}: load peft model"); step+=1
-# model = PeftModel.from_pretrained(model, adapter_name)
+model = PeftModel.from_pretrained(model, adapter_name)
 
 print(f"\nStep {step}: merge and unload"); step+=1
 model = model.merge_and_unload()
