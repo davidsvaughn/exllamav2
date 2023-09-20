@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# Usage: bash quantize.sh 2.7
+#
 # Convert .bin model files to .safetensor and run exllamav2 quant
 #
 # Steps:
@@ -14,7 +16,9 @@ set -eEuo pipefail
 ## Edit these values below
 ########################################################################
 
-bits="2.7"
+bits="$1"
+# bits="2.7"
+
 model_dir="/home/ubuntu/exllamav2/davidsvaughn/llamav2-70b-merged"
 quant_dir="/home/ubuntu/exllamav2/qmodels/llamav2-70b-${bits}bpw"
 
