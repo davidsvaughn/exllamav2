@@ -29,10 +29,18 @@ if '-7b-' in model_name:
         device_map={"": 0}
     )     
 else: # 13b, 70b
+    
+    # model = AutoModelForCausalLM.from_pretrained(
+    #     model_name,
+    #     load_in_4bit=True,
+    #     device_map={"": 0},
+    # )
+
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        load_in_4bit=True,
-        device_map={"": 0}
+        device_map={"": 0},
+        low_cpu_mem_usage=True,
+        torch_dtype=torch.float16,
     )
 
     # from transformers import BitsAndBytesConfig
