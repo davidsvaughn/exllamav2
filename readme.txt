@@ -52,6 +52,9 @@ bash quantize.sh
 
 python test_inference.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt"
 
+python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt"
+
+
 rsync -azP -e "ssh -i $LAMBDA_PEM" $LIP:/home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw/*.* /home/david/code/davidsvaughn/LLM-utils/exllamav2/qmodels/llamav2-70b-3.0bpw
 
 

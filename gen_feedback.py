@@ -50,7 +50,7 @@ parser.add_argument("-s", "--speed", action = "store_true", help = "Test raw gen
 args = parser.parse_args()
 
 config = ExLlamaV2Config()
-config.model_dir = model_directory
+config.model_dir = args.model_dir
 config.prepare()
 
 # Set config options
