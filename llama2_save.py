@@ -29,16 +29,16 @@ if '-7b-' in model_name:
         device_map={"": 0}
     )     
 else: # 13b, 70b
-    
+
     # model = AutoModelForCausalLM.from_pretrained(
     #     model_name,
     #     load_in_4bit=True,
     #     device_map={"": 0},
     # )
 
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        device_map={"": 0},
+    from peft import AutoPeftModelForCausalLM
+    model = AutoPeftModelForCausalLM.from_pretrained(
+        adapter_name,
         low_cpu_mem_usage=True,
         torch_dtype=torch.float16,
     )
@@ -61,7 +61,7 @@ else: # 13b, 70b
     # )
 
 print(f"\nStep {step}: load peft model"); step+=1
-model = PeftModel.from_pretrained(model, adapter_name)
+# model = PeftModel.from_pretrained(model, adapter_name)
 
 print(f"\nStep {step}: merge and unload"); step+=1
 model = model.merge_and_unload()
