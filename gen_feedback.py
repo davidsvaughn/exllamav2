@@ -70,6 +70,7 @@ prompt = args.prompt
 if prompt.endswith('.txt') and os.path.exists(prompt):
     with open(prompt) as f:
         prompt = f.read()
+prompt = prompt.strip()
 
 print("Loading model: " + args.model_dir)
 model = ExLlamaV2(config)
@@ -91,11 +92,17 @@ settings.disallow_tokens(tokenizer, [tokenizer.eos_token_id])
 generator.warmup()
 time_begin = time.time()
 
-output = generator.generate_simple(prompt.strip(), settings, max_new_tokens, seed=seed)
+output = generator.generate_simple(prompt, settings, max_new_tokens, seed=seed)
 
 time_end = time.time()
 time_total = time_end - time_begin
 
-print(output)
-print()
+response = output[len(prompt):].strip()
+sep = '\n' # '###'
+response = response.split(sep)[0]
+
+print(prompt)
+print('------->')
+print(response)
+print('<-------')
 print(f"Response generated in {time_total:.2f} seconds, {max_new_tokens} tokens, {max_new_tokens / time_total:.2f} tokens/second")
