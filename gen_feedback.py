@@ -114,5 +114,5 @@ print(prompt)
 print('--------->')
 for i,response in enumerate(responses):
     print(f"{i}.\t{response}")
-print('<---------')
+print('<---------\n')
 print(f"Responses generated in {time_total:.2f} seconds, {n*max_new_tokens} tokens, {n*max_new_tokens / time_total:.2f} tokens/second")
