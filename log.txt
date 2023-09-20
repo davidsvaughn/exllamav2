@@ -1,0 +1,2134 @@
+- Quantizing... 3.0 bpw
+
+ -- Layer: model.layers.0 (Attention)
+ -- Linear: model.layers.0.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.042580
+ -- Module quantized, time: 23.20 seconds
+ -- Layer: model.layers.0 (MLP)
+ -- Linear: model.layers.0.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.015461
+ -- Module quantized, time: 26.94 seconds
+ -- Layer: model.layers.1 (Attention)
+ -- Linear: model.layers.1.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.061633
+ -- Module quantized, time: 22.77 seconds
+ -- Layer: model.layers.1 (MLP)
+ -- Linear: model.layers.1.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.023064
+ -- Module quantized, time: 26.35 seconds
+ -- Layer: model.layers.2 (Attention)
+ -- Linear: model.layers.2.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.092138
+ -- Module quantized, time: 22.19 seconds
+ -- Layer: model.layers.2 (MLP)
+ -- Linear: model.layers.2.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.052407
+ -- Module quantized, time: 31.24 seconds
+ -- Layer: model.layers.3 (Attention)
+ -- Linear: model.layers.3.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.024737
+ -- Module quantized, time: 25.38 seconds
+ -- Layer: model.layers.3 (MLP)
+ -- Linear: model.layers.3.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.3.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.020161
+ -- Module quantized, time: 26.22 seconds
+ -- Layer: model.layers.4 (Attention)
+ -- Linear: model.layers.4.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.037809
+ -- Module quantized, time: 22.75 seconds
+ -- Layer: model.layers.4 (MLP)
+ -- Linear: model.layers.4.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.4.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.4.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.028014
+ -- Module quantized, time: 32.56 seconds
+ -- Layer: model.layers.5 (Attention)
+ -- Linear: model.layers.5.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.051116
+ -- Module quantized, time: 24.87 seconds
+ -- Layer: model.layers.5 (MLP)
+ -- Linear: model.layers.5.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.5.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.5.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.034559
+ -- Module quantized, time: 29.60 seconds
+ -- Layer: model.layers.6 (Attention)
+ -- Linear: model.layers.6.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.092594
+ -- Module quantized, time: 23.05 seconds
+ -- Layer: model.layers.6 (MLP)
+ -- Linear: model.layers.6.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.6.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.6.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.042526
+ -- Module quantized, time: 28.20 seconds
+ -- Layer: model.layers.7 (Attention)
+ -- Linear: model.layers.7.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.self_attn.v_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.7.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.107743
+ -- Module quantized, time: 21.54 seconds
+ -- Layer: model.layers.7 (MLP)
+ -- Linear: model.layers.7.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.7.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.7.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.045140
+ -- Module quantized, time: 28.80 seconds
+ -- Layer: model.layers.8 (Attention)
+ -- Linear: model.layers.8.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.self_attn.v_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.8.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.117753
+ -- Module quantized, time: 25.42 seconds
+ -- Layer: model.layers.8 (MLP)
+ -- Linear: model.layers.8.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.8.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.8.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.103849
+ -- Module quantized, time: 25.26 seconds
+ -- Layer: model.layers.9 (Attention)
+ -- Linear: model.layers.9.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.9.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.023668
+ -- Module quantized, time: 21.93 seconds
+ -- Layer: model.layers.9 (MLP)
+ -- Linear: model.layers.9.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.9.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.9.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.012581
+ -- Module quantized, time: 28.70 seconds
+ -- Layer: model.layers.10 (Attention)
+ -- Linear: model.layers.10.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.10.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.10.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.10.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.028250
+ -- Module quantized, time: 22.65 seconds
+ -- Layer: model.layers.10 (MLP)
+ -- Linear: model.layers.10.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.10.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.10.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.014643
+ -- Module quantized, time: 25.01 seconds
+ -- Layer: model.layers.11 (Attention)
+ -- Linear: model.layers.11.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.11.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.048012
+ -- Module quantized, time: 23.84 seconds
+ -- Layer: model.layers.11 (MLP)
+ -- Linear: model.layers.11.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.11.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.11.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.015155
+ -- Module quantized, time: 26.74 seconds
+ -- Layer: model.layers.12 (Attention)
+ -- Linear: model.layers.12.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.12.self_attn.o_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.046817
+ -- Module quantized, time: 22.81 seconds
+ -- Layer: model.layers.12 (MLP)
+ -- Linear: model.layers.12.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.12.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.12.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.016058
+ -- Module quantized, time: 24.66 seconds
+ -- Layer: model.layers.13 (Attention)
+ -- Linear: model.layers.13.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.13.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.13.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.13.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.048568
+ -- Module quantized, time: 21.76 seconds
+ -- Layer: model.layers.13 (MLP)
+ -- Linear: model.layers.13.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.13.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.13.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.016321
+ -- Module quantized, time: 24.35 seconds
+ -- Layer: model.layers.14 (Attention)
+ -- Linear: model.layers.14.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.14.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.14.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.14.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.078222
+ -- Module quantized, time: 23.37 seconds
+ -- Layer: model.layers.14 (MLP)
+ -- Linear: model.layers.14.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.14.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.14.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.017604
+ -- Module quantized, time: 30.82 seconds
+ -- Layer: model.layers.15 (Attention)
+ -- Linear: model.layers.15.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.15.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.15.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.15.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.063104
+ -- Module quantized, time: 24.71 seconds
+ -- Layer: model.layers.15 (MLP)
+ -- Linear: model.layers.15.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.15.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.15.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.018398
+ -- Module quantized, time: 30.41 seconds
+ -- Layer: model.layers.16 (Attention)
+ -- Linear: model.layers.16.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.16.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.16.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.16.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.065055
+ -- Module quantized, time: 24.49 seconds
+ -- Layer: model.layers.16 (MLP)
+ -- Linear: model.layers.16.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.16.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.16.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.019510
+ -- Module quantized, time: 29.55 seconds
+ -- Layer: model.layers.17 (Attention)
+ -- Linear: model.layers.17.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.17.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.17.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.17.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.055348
+ -- Module quantized, time: 24.77 seconds
+ -- Layer: model.layers.17 (MLP)
+ -- Linear: model.layers.17.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.17.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.17.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.019855
+ -- Module quantized, time: 25.16 seconds
+ -- Layer: model.layers.18 (Attention)
+ -- Linear: model.layers.18.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.18.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.18.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.18.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.074482
+ -- Module quantized, time: 23.82 seconds
+ -- Layer: model.layers.18 (MLP)
+ -- Linear: model.layers.18.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.18.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.18.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.020366
+ -- Module quantized, time: 28.75 seconds
+ -- Layer: model.layers.19 (Attention)
+ -- Linear: model.layers.19.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.19.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.19.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.19.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.066382
+ -- Module quantized, time: 24.70 seconds
+ -- Layer: model.layers.19 (MLP)
+ -- Linear: model.layers.19.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.19.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.19.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.020213
+ -- Module quantized, time: 25.18 seconds
+ -- Layer: model.layers.20 (Attention)
+ -- Linear: model.layers.20.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.20.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.20.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.20.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.040519
+ -- Module quantized, time: 23.73 seconds
+ -- Layer: model.layers.20 (MLP)
+ -- Linear: model.layers.20.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.20.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.20.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.019465
+ -- Module quantized, time: 25.09 seconds
+ -- Layer: model.layers.21 (Attention)
+ -- Linear: model.layers.21.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.21.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.21.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.21.self_attn.o_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Layer rfn_error: 0.060408
+ -- Module quantized, time: 22.12 seconds
+ -- Layer: model.layers.21 (MLP)
+ -- Linear: model.layers.21.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.21.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.21.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.020093
+ -- Module quantized, time: 26.42 seconds
+ -- Layer: model.layers.22 (Attention)
+ -- Linear: model.layers.22.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.22.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.22.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.22.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.050404
+ -- Module quantized, time: 23.93 seconds
+ -- Layer: model.layers.22 (MLP)
+ -- Linear: model.layers.22.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.22.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.22.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.020506
+ -- Module quantized, time: 29.55 seconds
+ -- Layer: model.layers.23 (Attention)
+ -- Linear: model.layers.23.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.23.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.23.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.23.self_attn.o_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Layer rfn_error: 0.043857
+ -- Module quantized, time: 22.61 seconds
+ -- Layer: model.layers.23 (MLP)
+ -- Linear: model.layers.23.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.23.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.23.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.021040
+ -- Module quantized, time: 32.43 seconds
+ -- Layer: model.layers.24 (Attention)
+ -- Linear: model.layers.24.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.24.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.24.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.24.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.049590
+ -- Module quantized, time: 24.84 seconds
+ -- Layer: model.layers.24 (MLP)
+ -- Linear: model.layers.24.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.24.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.24.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.021803
+ -- Module quantized, time: 32.08 seconds
+ -- Layer: model.layers.25 (Attention)
+ -- Linear: model.layers.25.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.25.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.25.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.25.self_attn.o_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.074920
+ -- Module quantized, time: 25.21 seconds
+ -- Layer: model.layers.25 (MLP)
+ -- Linear: model.layers.25.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.25.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.25.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.021731
+ -- Module quantized, time: 24.99 seconds
+ -- Layer: model.layers.26 (Attention)
+ -- Linear: model.layers.26.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.26.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.26.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.26.self_attn.o_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Layer rfn_error: 0.082914
+ -- Module quantized, time: 20.13 seconds
+ -- Layer: model.layers.26 (MLP)
+ -- Linear: model.layers.26.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.26.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.26.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.022762
+ -- Module quantized, time: 28.45 seconds
+ -- Layer: model.layers.27 (Attention)
+ -- Linear: model.layers.27.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.27.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.27.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.27.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.041393
+ -- Module quantized, time: 24.92 seconds
+ -- Layer: model.layers.27 (MLP)
+ -- Linear: model.layers.27.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.27.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.27.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.022869
+ -- Module quantized, time: 25.50 seconds
+ -- Layer: model.layers.28 (Attention)
+ -- Linear: model.layers.28.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.28.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.28.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.28.self_attn.o_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Layer rfn_error: 0.069190
+ -- Module quantized, time: 23.51 seconds
+ -- Layer: model.layers.28 (MLP)
+ -- Linear: model.layers.28.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.28.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.28.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.023607
+ -- Module quantized, time: 27.27 seconds
+ -- Layer: model.layers.29 (Attention)
+ -- Linear: model.layers.29.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.29.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.29.self_attn.v_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.29.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.092793
+ -- Module quantized, time: 23.42 seconds
+ -- Layer: model.layers.29 (MLP)
+ -- Linear: model.layers.29.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.29.mlp.up_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.29.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.022210
+ -- Module quantized, time: 30.99 seconds
+ -- Layer: model.layers.30 (Attention)
+ -- Linear: model.layers.30.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.30.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.30.self_attn.v_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.30.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.050517
+ -- Module quantized, time: 25.46 seconds
+ -- Layer: model.layers.30 (MLP)
+ -- Linear: model.layers.30.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.30.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.30.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.022078
+ -- Module quantized, time: 28.07 seconds
+ -- Layer: model.layers.31 (Attention)
+ -- Linear: model.layers.31.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.31.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.31.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.31.self_attn.o_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Layer rfn_error: 0.064936
+ -- Module quantized, time: 22.69 seconds
+ -- Layer: model.layers.31 (MLP)
+ -- Linear: model.layers.31.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.31.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.31.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.022735
+ -- Module quantized, time: 26.15 seconds
+ -- Layer: model.layers.32 (Attention)
+ -- Linear: model.layers.32.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.32.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.32.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.32.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.061996
+ -- Module quantized, time: 19.24 seconds
+ -- Layer: model.layers.32 (MLP)
+ -- Linear: model.layers.32.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.32.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.32.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.023338
+ -- Module quantized, time: 25.20 seconds
+ -- Layer: model.layers.33 (Attention)
+ -- Linear: model.layers.33.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.33.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.33.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.33.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.094110
+ -- Module quantized, time: 24.44 seconds
+ -- Layer: model.layers.33 (MLP)
+ -- Linear: model.layers.33.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.33.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.33.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.024948
+ -- Module quantized, time: 26.19 seconds
+ -- Layer: model.layers.34 (Attention)
+ -- Linear: model.layers.34.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.34.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.34.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.34.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.052259
+ -- Module quantized, time: 23.92 seconds
+ -- Layer: model.layers.34 (MLP)
+ -- Linear: model.layers.34.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.34.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.34.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025125
+ -- Module quantized, time: 26.50 seconds
+ -- Layer: model.layers.35 (Attention)
+ -- Linear: model.layers.35.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.35.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.35.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.35.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.064590
+ -- Module quantized, time: 24.66 seconds
+ -- Layer: model.layers.35 (MLP)
+ -- Linear: model.layers.35.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.35.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.35.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025663
+ -- Module quantized, time: 31.81 seconds
+ -- Layer: model.layers.36 (Attention)
+ -- Linear: model.layers.36.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.36.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.36.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.36.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.087944
+ -- Module quantized, time: 25.13 seconds
+ -- Layer: model.layers.36 (MLP)
+ -- Linear: model.layers.36.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.36.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.36.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026053
+ -- Module quantized, time: 29.17 seconds
+ -- Layer: model.layers.37 (Attention)
+ -- Linear: model.layers.37.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.37.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.37.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.37.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.091473
+ -- Module quantized, time: 24.70 seconds
+ -- Layer: model.layers.37 (MLP)
+ -- Linear: model.layers.37.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.37.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.37.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026243
+ -- Module quantized, time: 29.82 seconds
+ -- Layer: model.layers.38 (Attention)
+ -- Linear: model.layers.38.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.38.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.38.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.38.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.120445
+ -- Module quantized, time: 24.87 seconds
+ -- Layer: model.layers.38 (MLP)
+ -- Linear: model.layers.38.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.38.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.38.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026723
+ -- Module quantized, time: 27.67 seconds
+ -- Layer: model.layers.39 (Attention)
+ -- Linear: model.layers.39.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.39.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.39.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.39.self_attn.o_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.130316
+ -- Module quantized, time: 20.08 seconds
+ -- Layer: model.layers.39 (MLP)
+ -- Linear: model.layers.39.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.39.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.39.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027484
+ -- Module quantized, time: 24.38 seconds
+ -- Layer: model.layers.40 (Attention)
+ -- Linear: model.layers.40.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.40.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.40.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.40.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.129128
+ -- Module quantized, time: 23.53 seconds
+ -- Layer: model.layers.40 (MLP)
+ -- Linear: model.layers.40.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.40.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.40.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027499
+ -- Module quantized, time: 30.23 seconds
+ -- Layer: model.layers.41 (Attention)
+ -- Linear: model.layers.41.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.41.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.41.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.41.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.087147
+ -- Module quantized, time: 23.49 seconds
+ -- Layer: model.layers.41 (MLP)
+ -- Linear: model.layers.41.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.41.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.41.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027581
+ -- Module quantized, time: 29.23 seconds
+ -- Layer: model.layers.42 (Attention)
+ -- Linear: model.layers.42.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.42.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.42.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.42.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.119201
+ -- Module quantized, time: 22.35 seconds
+ -- Layer: model.layers.42 (MLP)
+ -- Linear: model.layers.42.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.42.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.42.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027494
+ -- Module quantized, time: 24.68 seconds
+ -- Layer: model.layers.43 (Attention)
+ -- Linear: model.layers.43.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.43.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.43.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.43.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.095936
+ -- Module quantized, time: 21.55 seconds
+ -- Layer: model.layers.43 (MLP)
+ -- Linear: model.layers.43.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.43.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.43.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027913
+ -- Module quantized, time: 29.15 seconds
+ -- Layer: model.layers.44 (Attention)
+ -- Linear: model.layers.44.self_attn.q_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Linear: model.layers.44.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.44.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.44.self_attn.o_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Layer rfn_error: 0.171998
+ -- Module quantized, time: 23.90 seconds
+ -- Layer: model.layers.44 (MLP)
+ -- Linear: model.layers.44.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.44.mlp.up_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.44.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026758
+ -- Module quantized, time: 26.34 seconds
+ -- Layer: model.layers.45 (Attention)
+ -- Linear: model.layers.45.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.45.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.45.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.45.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.090101
+ -- Module quantized, time: 23.42 seconds
+ -- Layer: model.layers.45 (MLP)
+ -- Linear: model.layers.45.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.45.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.45.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026405
+ -- Module quantized, time: 28.87 seconds
+ -- Layer: model.layers.46 (Attention)
+ -- Linear: model.layers.46.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.46.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.46.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.46.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.100634
+ -- Module quantized, time: 24.86 seconds
+ -- Layer: model.layers.46 (MLP)
+ -- Linear: model.layers.46.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.46.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.46.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026501
+ -- Module quantized, time: 28.03 seconds
+ -- Layer: model.layers.47 (Attention)
+ -- Linear: model.layers.47.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.47.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.47.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.47.self_attn.o_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.062124
+ -- Module quantized, time: 22.60 seconds
+ -- Layer: model.layers.47 (MLP)
+ -- Linear: model.layers.47.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.47.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.47.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026461
+ -- Module quantized, time: 27.73 seconds
+ -- Layer: model.layers.48 (Attention)
+ -- Linear: model.layers.48.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.48.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.48.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.48.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.079168
+ -- Module quantized, time: 24.45 seconds
+ -- Layer: model.layers.48 (MLP)
+ -- Linear: model.layers.48.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.48.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.48.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.025322
+ -- Module quantized, time: 26.67 seconds
+ -- Layer: model.layers.49 (Attention)
+ -- Linear: model.layers.49.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.49.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.49.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.49.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.041154
+ -- Module quantized, time: 22.77 seconds
+ -- Layer: model.layers.49 (MLP)
+ -- Linear: model.layers.49.mlp.gate_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.49.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.49.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026556
+ -- Module quantized, time: 28.82 seconds
+ -- Layer: model.layers.50 (Attention)
+ -- Linear: model.layers.50.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.50.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.50.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.50.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.081892
+ -- Module quantized, time: 23.74 seconds
+ -- Layer: model.layers.50 (MLP)
+ -- Linear: model.layers.50.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.50.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.50.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.025017
+ -- Module quantized, time: 32.01 seconds
+ -- Layer: model.layers.51 (Attention)
+ -- Linear: model.layers.51.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.51.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.51.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.51.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.097010
+ -- Module quantized, time: 24.08 seconds
+ -- Layer: model.layers.51 (MLP)
+ -- Linear: model.layers.51.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.51.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.51.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.024045
+ -- Module quantized, time: 26.53 seconds
+ -- Layer: model.layers.52 (Attention)
+ -- Linear: model.layers.52.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.52.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.52.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.52.self_attn.o_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.133387
+ -- Module quantized, time: 23.18 seconds
+ -- Layer: model.layers.52 (MLP)
+ -- Linear: model.layers.52.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.52.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.52.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.023187
+ -- Module quantized, time: 32.35 seconds
+ -- Layer: model.layers.53 (Attention)
+ -- Linear: model.layers.53.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.53.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.53.self_attn.v_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.53.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.053198
+ -- Module quantized, time: 23.32 seconds
+ -- Layer: model.layers.53 (MLP)
+ -- Linear: model.layers.53.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.53.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.53.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.022307
+ -- Module quantized, time: 29.04 seconds
+ -- Layer: model.layers.54 (Attention)
+ -- Linear: model.layers.54.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.54.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.54.self_attn.v_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.54.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.064651
+ -- Module quantized, time: 12.52 seconds
+ -- Layer: model.layers.54 (MLP)
+ -- Linear: model.layers.54.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.54.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.54.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.022000
+ -- Module quantized, time: 25.25 seconds
+ -- Layer: model.layers.55 (Attention)
+ -- Linear: model.layers.55.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.55.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.55.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.55.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.077975
+ -- Module quantized, time: 14.48 seconds
+ -- Layer: model.layers.55 (MLP)
+ -- Linear: model.layers.55.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.55.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.55.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.022309
+ -- Module quantized, time: 25.04 seconds
+ -- Layer: model.layers.56 (Attention)
+ -- Linear: model.layers.56.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.56.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.56.self_attn.v_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.56.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.053808
+ -- Module quantized, time: 16.54 seconds
+ -- Layer: model.layers.56 (MLP)
+ -- Linear: model.layers.56.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.56.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.56.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.020629
+ -- Module quantized, time: 24.85 seconds
+ -- Layer: model.layers.57 (Attention)
+ -- Linear: model.layers.57.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.57.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.57.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.57.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.056572
+ -- Module quantized, time: 12.21 seconds
+ -- Layer: model.layers.57 (MLP)
+ -- Linear: model.layers.57.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.57.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.57.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.020651
+ -- Module quantized, time: 25.41 seconds
+ -- Layer: model.layers.58 (Attention)
+ -- Linear: model.layers.58.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.58.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.58.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.58.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.039402
+ -- Module quantized, time: 17.28 seconds
+ -- Layer: model.layers.58 (MLP)
+ -- Linear: model.layers.58.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.58.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.58.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.021054
+ -- Module quantized, time: 31.22 seconds
+ -- Layer: model.layers.59 (Attention)
+ -- Linear: model.layers.59.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.59.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.59.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.59.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.044481
+ -- Module quantized, time: 17.97 seconds
+ -- Layer: model.layers.59 (MLP)
+ -- Linear: model.layers.59.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.59.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.59.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.020914
+ -- Module quantized, time: 25.19 seconds
+ -- Layer: model.layers.60 (Attention)
+ -- Linear: model.layers.60.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.60.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.60.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.60.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.011167
+ -- Module quantized, time: 19.22 seconds
+ -- Layer: model.layers.60 (MLP)
+ -- Linear: model.layers.60.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.60.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.60.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.021317
+ -- Module quantized, time: 26.10 seconds
+ -- Layer: model.layers.61 (Attention)
+ -- Linear: model.layers.61.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.61.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.61.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.61.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.019152
+ -- Module quantized, time: 17.76 seconds
+ -- Layer: model.layers.61 (MLP)
+ -- Linear: model.layers.61.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.61.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.61.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.020857
+ -- Module quantized, time: 30.72 seconds
+ -- Layer: model.layers.62 (Attention)
+ -- Linear: model.layers.62.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.62.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.62.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.62.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.026632
+ -- Module quantized, time: 17.03 seconds
+ -- Layer: model.layers.62 (MLP)
+ -- Linear: model.layers.62.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.62.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.62.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.021243
+ -- Module quantized, time: 25.09 seconds
+ -- Layer: model.layers.63 (Attention)
+ -- Linear: model.layers.63.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.63.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.63.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.63.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.024907
+ -- Module quantized, time: 14.54 seconds
+ -- Layer: model.layers.63 (MLP)
+ -- Linear: model.layers.63.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.63.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.63.mlp.down_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.021623
+ -- Module quantized, time: 25.37 seconds
+ -- Layer: model.layers.64 (Attention)
+ -- Linear: model.layers.64.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.64.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.64.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.64.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.039446
+ -- Module quantized, time: 16.87 seconds
+ -- Layer: model.layers.64 (MLP)
+ -- Linear: model.layers.64.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.64.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.64.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.023340
+ -- Module quantized, time: 26.03 seconds
+ -- Layer: model.layers.65 (Attention)
+ -- Linear: model.layers.65.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.65.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.65.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.65.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.011093
+ -- Module quantized, time: 19.71 seconds
+ -- Layer: model.layers.65 (MLP)
+ -- Linear: model.layers.65.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.65.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.65.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.022937
+ -- Module quantized, time: 26.28 seconds
+ -- Layer: model.layers.66 (Attention)
+ -- Linear: model.layers.66.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.66.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.66.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.66.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.019901
+ -- Module quantized, time: 12.61 seconds
+ -- Layer: model.layers.66 (MLP)
+ -- Linear: model.layers.66.mlp.gate_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.66.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.66.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.023518
+ -- Module quantized, time: 25.20 seconds
+ -- Layer: model.layers.67 (Attention)
+ -- Linear: model.layers.67.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.67.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.67.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.67.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.016369
+ -- Module quantized, time: 20.91 seconds
+ -- Layer: model.layers.67 (MLP)
+ -- Linear: model.layers.67.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.67.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.67.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.024613
+ -- Module quantized, time: 26.13 seconds
+ -- Layer: model.layers.68 (Attention)
+ -- Linear: model.layers.68.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.68.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.68.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.68.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.036533
+ -- Module quantized, time: 12.61 seconds
+ -- Layer: model.layers.68 (MLP)
+ -- Linear: model.layers.68.mlp.gate_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.68.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.68.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.025475
+ -- Module quantized, time: 28.10 seconds
+ -- Layer: model.layers.69 (Attention)
+ -- Linear: model.layers.69.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.69.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.69.self_attn.v_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.69.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.065845
+ -- Module quantized, time: 12.69 seconds
+ -- Layer: model.layers.69 (MLP)
+ -- Linear: model.layers.69.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.69.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.69.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.025898
+ -- Module quantized, time: 25.57 seconds
+ -- Layer: model.layers.70 (Attention)
+ -- Linear: model.layers.70.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.70.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.70.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.70.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.044531
+ -- Module quantized, time: 12.80 seconds
+ -- Layer: model.layers.70 (MLP)
+ -- Linear: model.layers.70.mlp.gate_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.70.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.70.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.026672
+ -- Module quantized, time: 25.58 seconds
+ -- Layer: model.layers.71 (Attention)
+ -- Linear: model.layers.71.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.71.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.71.self_attn.v_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.71.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.039615
+ -- Module quantized, time: 17.69 seconds
+ -- Layer: model.layers.71 (MLP)
+ -- Linear: model.layers.71.mlp.gate_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.71.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.71.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.027407
+ -- Module quantized, time: 29.53 seconds
+ -- Layer: model.layers.72 (Attention)
+ -- Linear: model.layers.72.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.72.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.72.self_attn.v_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.72.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.048175
+ -- Module quantized, time: 16.70 seconds
+ -- Layer: model.layers.72 (MLP)
+ -- Linear: model.layers.72.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.72.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.72.mlp.down_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Layer rfn_error: 0.028359
+ -- Module quantized, time: 27.29 seconds
+ -- Layer: model.layers.73 (Attention)
+ -- Linear: model.layers.73.self_attn.q_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.73.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.73.self_attn.v_proj -> 0.1:4b/0.9:3b 32g s4, 3.22 bpw
+ -- Linear: model.layers.73.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.039298
+ -- Module quantized, time: 12.86 seconds
+ -- Layer: model.layers.73 (MLP)
+ -- Linear: model.layers.73.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.73.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.73.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.030746
+ -- Module quantized, time: 25.16 seconds
+ -- Layer: model.layers.74 (Attention)
+ -- Linear: model.layers.74.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.74.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.74.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.74.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.062849
+ -- Module quantized, time: 12.75 seconds
+ -- Layer: model.layers.74 (MLP)
+ -- Linear: model.layers.74.mlp.gate_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.74.mlp.up_proj -> 0.4:4b/0.6:3b 32g s4, 3.53 bpw
+ -- Linear: model.layers.74.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.031460
+ -- Module quantized, time: 24.15 seconds
+ -- Layer: model.layers.75 (Attention)
+ -- Linear: model.layers.75.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.75.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.75.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.75.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.090804
+ -- Module quantized, time: 20.29 seconds
+ -- Layer: model.layers.75 (MLP)
+ -- Linear: model.layers.75.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.75.mlp.up_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Linear: model.layers.75.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.038291
+ -- Module quantized, time: 32.65 seconds
+ -- Layer: model.layers.76 (Attention)
+ -- Linear: model.layers.76.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.76.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.76.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.76.self_attn.o_proj -> 0.05:4b/0.95:3b 32g s4, 3.17 bpw
+ -- Layer rfn_error: 0.115858
+ -- Module quantized, time: 18.36 seconds
+ -- Layer: model.layers.76 (MLP)
+ -- Linear: model.layers.76.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.76.mlp.up_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.76.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.041957
+ -- Module quantized, time: 30.73 seconds
+ -- Layer: model.layers.77 (Attention)
+ -- Linear: model.layers.77.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.77.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.77.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.77.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.088610
+ -- Module quantized, time: 17.23 seconds
+ -- Layer: model.layers.77 (MLP)
+ -- Linear: model.layers.77.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.77.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.77.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.038982
+ -- Module quantized, time: 26.89 seconds
+ -- Layer: model.layers.78 (Attention)
+ -- Linear: model.layers.78.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.78.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.78.self_attn.v_proj -> 1.0:3b 32g s4, 3.13 bpw
+ -- Linear: model.layers.78.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.075461
+ -- Module quantized, time: 17.31 seconds
+ -- Layer: model.layers.78 (MLP)
+ -- Linear: model.layers.78.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.78.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.78.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.042218
+ -- Module quantized, time: 24.89 seconds
+ -- Layer: model.layers.79 (Attention)
+ -- Linear: model.layers.79.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.79.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.050456
+ -- Module quantized, time: 12.09 seconds
+ -- Layer: model.layers.79 (MLP)
+ -- Linear: model.layers.79.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.79.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.79.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.062072
+ -- Module quantized, time: 25.73 seconds
+ -- Layer: model.norm (RMSNorm)
+ -- Layer rfn_error: 0.000000
+ -- Module quantized, time: 8.84 seconds
+ -- Layer: lm_head (Linear)
+ -- Linear: lm_head -> 0.15:8b/0.85:6b 32g s4, 6.44 bpw
+ -- Layer rfn_error: 0.009569
+ -- Calibration perplexity (quant): 2133.1690
+ -- Module quantized, time: 16.48 seconds
+ -- Compiling output file...
+ -- Writing shard 1...
+ -- Writing shard 2...
+ -- Writing shard 3...
+ -- Writing shard 4...
+ -- Saved model weights:
+ -- Saved model weights:
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw/output-00001-of-00004.safetensors (8,126 MB)
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw/output-00002-of-00004.safetensors (8,113 MB)
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw/output-00003-of-00004.safetensors (8,155 MB)
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw/output-00004-of-00004.safetensors (812 MB)
+ -- Finished
+Copying measurement file (reuse on quants of the same model for different bit targets): 
+Copying original model's model.* and *.json files to new quant directory: /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw
+cp: warning: source file '/home/ubuntu/exllamav2/davidsvaughn/llamav2-70b-merged/tokenizer.json' specified more than once
+
+
+
+
+========================================================================================
+
+
+-- Quantizing... 2.7 bpw
+
+ -- Layer: model.layers.0 (Attention)
+ -- Linear: model.layers.0.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.042579
+ -- Module quantized, time: 28.33 seconds
+ -- Layer: model.layers.0 (MLP)
+ -- Linear: model.layers.0.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.0.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.015461
+ -- Module quantized, time: 30.32 seconds
+ -- Layer: model.layers.1 (Attention)
+ -- Linear: model.layers.1.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.061676
+ -- Module quantized, time: 24.64 seconds
+ -- Layer: model.layers.1 (MLP)
+ -- Linear: model.layers.1.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.1.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.023079
+ -- Module quantized, time: 29.78 seconds
+ -- Layer: model.layers.2 (Attention)
+ -- Linear: model.layers.2.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.098852
+ -- Module quantized, time: 26.58 seconds
+ -- Layer: model.layers.2 (MLP)
+ -- Linear: model.layers.2.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.2.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.053837
+ -- Module quantized, time: 33.88 seconds
+ -- Layer: model.layers.3 (Attention)
+ -- Linear: model.layers.3.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.025230
+ -- Module quantized, time: 26.65 seconds
+ -- Layer: model.layers.3 (MLP)
+ -- Linear: model.layers.3.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.3.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.024530
+ -- Module quantized, time: 28.50 seconds
+ -- Layer: model.layers.4 (Attention)
+ -- Linear: model.layers.4.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.037538
+ -- Module quantized, time: 26.84 seconds
+ -- Layer: model.layers.4 (MLP)
+ -- Linear: model.layers.4.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.4.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.033473
+ -- Module quantized, time: 29.20 seconds
+ -- Layer: model.layers.5 (Attention)
+ -- Linear: model.layers.5.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.058647
+ -- Module quantized, time: 24.65 seconds
+ -- Layer: model.layers.5 (MLP)
+ -- Linear: model.layers.5.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.5.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.043253
+ -- Module quantized, time: 27.07 seconds
+ -- Layer: model.layers.6 (Attention)
+ -- Linear: model.layers.6.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.106959
+ -- Module quantized, time: 26.59 seconds
+ -- Layer: model.layers.6 (MLP)
+ -- Linear: model.layers.6.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.6.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.055373
+ -- Module quantized, time: 33.95 seconds
+ -- Layer: model.layers.7 (Attention)
+ -- Linear: model.layers.7.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.120379
+ -- Module quantized, time: 27.51 seconds
+ -- Layer: model.layers.7 (MLP)
+ -- Linear: model.layers.7.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.7.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.062061
+ -- Module quantized, time: 28.56 seconds
+ -- Layer: model.layers.8 (Attention)
+ -- Linear: model.layers.8.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.125831
+ -- Module quantized, time: 21.77 seconds
+ -- Layer: model.layers.8 (MLP)
+ -- Linear: model.layers.8.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.8.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.103660
+ -- Module quantized, time: 29.95 seconds
+ -- Layer: model.layers.9 (Attention)
+ -- Linear: model.layers.9.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.025891
+ -- Module quantized, time: 26.22 seconds
+ -- Layer: model.layers.9 (MLP)
+ -- Linear: model.layers.9.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.9.mlp.up_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Linear: model.layers.9.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.022268
+ -- Module quantized, time: 31.89 seconds
+ -- Layer: model.layers.10 (Attention)
+ -- Linear: model.layers.10.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.10.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.10.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.10.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.031697
+ -- Module quantized, time: 26.70 seconds
+ -- Layer: model.layers.10 (MLP)
+ -- Linear: model.layers.10.mlp.gate_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.10.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.10.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.025111
+ -- Module quantized, time: 27.11 seconds
+ -- Layer: model.layers.11 (Attention)
+ -- Linear: model.layers.11.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.054901
+ -- Module quantized, time: 26.13 seconds
+ -- Layer: model.layers.11 (MLP)
+ -- Linear: model.layers.11.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.11.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.11.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.026435
+ -- Module quantized, time: 31.23 seconds
+ -- Layer: model.layers.12 (Attention)
+ -- Linear: model.layers.12.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.self_attn.v_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.056887
+ -- Module quantized, time: 27.37 seconds
+ -- Layer: model.layers.12 (MLP)
+ -- Linear: model.layers.12.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.12.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.12.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.027446
+ -- Module quantized, time: 33.75 seconds
+ -- Layer: model.layers.13 (Attention)
+ -- Linear: model.layers.13.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.13.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.13.self_attn.v_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.13.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.053317
+ -- Module quantized, time: 27.28 seconds
+ -- Layer: model.layers.13 (MLP)
+ -- Linear: model.layers.13.mlp.gate_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.13.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.13.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.026318
+ -- Module quantized, time: 33.90 seconds
+ -- Layer: model.layers.14 (Attention)
+ -- Linear: model.layers.14.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.14.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.14.self_attn.v_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.14.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.083511
+ -- Module quantized, time: 27.29 seconds
+ -- Layer: model.layers.14 (MLP)
+ -- Linear: model.layers.14.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.14.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.14.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.025001
+ -- Module quantized, time: 33.60 seconds
+ -- Layer: model.layers.15 (Attention)
+ -- Linear: model.layers.15.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.15.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.15.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.15.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.067251
+ -- Module quantized, time: 25.94 seconds
+ -- Layer: model.layers.15 (MLP)
+ -- Linear: model.layers.15.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.15.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.15.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.026155
+ -- Module quantized, time: 29.43 seconds
+ -- Layer: model.layers.16 (Attention)
+ -- Linear: model.layers.16.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.16.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.16.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.16.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.075200
+ -- Module quantized, time: 26.53 seconds
+ -- Layer: model.layers.16 (MLP)
+ -- Linear: model.layers.16.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.16.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.16.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.027560
+ -- Module quantized, time: 30.91 seconds
+ -- Layer: model.layers.17 (Attention)
+ -- Linear: model.layers.17.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.17.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.17.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.17.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.063917
+ -- Module quantized, time: 24.73 seconds
+ -- Layer: model.layers.17 (MLP)
+ -- Linear: model.layers.17.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.17.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.17.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.027873
+ -- Module quantized, time: 36.25 seconds
+ -- Layer: model.layers.18 (Attention)
+ -- Linear: model.layers.18.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.18.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.18.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.18.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.084539
+ -- Module quantized, time: 27.01 seconds
+ -- Layer: model.layers.18 (MLP)
+ -- Linear: model.layers.18.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.18.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.18.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.028214
+ -- Module quantized, time: 28.43 seconds
+ -- Layer: model.layers.19 (Attention)
+ -- Linear: model.layers.19.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.19.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.19.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.19.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.072932
+ -- Module quantized, time: 26.47 seconds
+ -- Layer: model.layers.19 (MLP)
+ -- Linear: model.layers.19.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.19.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.19.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.026717
+ -- Module quantized, time: 27.23 seconds
+ -- Layer: model.layers.20 (Attention)
+ -- Linear: model.layers.20.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.20.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.20.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.20.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.044968
+ -- Module quantized, time: 26.55 seconds
+ -- Layer: model.layers.20 (MLP)
+ -- Linear: model.layers.20.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.20.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.20.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.023951
+ -- Module quantized, time: 29.22 seconds
+ -- Layer: model.layers.21 (Attention)
+ -- Linear: model.layers.21.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.21.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.21.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.21.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.063783
+ -- Module quantized, time: 23.42 seconds
+ -- Layer: model.layers.21 (MLP)
+ -- Linear: model.layers.21.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.21.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.21.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.024953
+ -- Module quantized, time: 26.57 seconds
+ -- Layer: model.layers.22 (Attention)
+ -- Linear: model.layers.22.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.22.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.22.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.22.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.053538
+ -- Module quantized, time: 25.46 seconds
+ -- Layer: model.layers.22 (MLP)
+ -- Linear: model.layers.22.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.22.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.22.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.025573
+ -- Module quantized, time: 31.87 seconds
+ -- Layer: model.layers.23 (Attention)
+ -- Linear: model.layers.23.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.23.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.23.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.23.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.049870
+ -- Module quantized, time: 25.73 seconds
+ -- Layer: model.layers.23 (MLP)
+ -- Linear: model.layers.23.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.23.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.23.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.026178
+ -- Module quantized, time: 30.35 seconds
+ -- Layer: model.layers.24 (Attention)
+ -- Linear: model.layers.24.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.24.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.24.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.24.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.055474
+ -- Module quantized, time: 25.60 seconds
+ -- Layer: model.layers.24 (MLP)
+ -- Linear: model.layers.24.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.24.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.24.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.028997
+ -- Module quantized, time: 32.91 seconds
+ -- Layer: model.layers.25 (Attention)
+ -- Linear: model.layers.25.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.25.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.25.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.25.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.076672
+ -- Module quantized, time: 27.61 seconds
+ -- Layer: model.layers.25 (MLP)
+ -- Linear: model.layers.25.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.25.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.25.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.030675
+ -- Module quantized, time: 33.38 seconds
+ -- Layer: model.layers.26 (Attention)
+ -- Linear: model.layers.26.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.26.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.26.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.26.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.089957
+ -- Module quantized, time: 27.67 seconds
+ -- Layer: model.layers.26 (MLP)
+ -- Linear: model.layers.26.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.26.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.26.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.031940
+ -- Module quantized, time: 27.35 seconds
+ -- Layer: model.layers.27 (Attention)
+ -- Linear: model.layers.27.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.27.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.27.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.27.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.046225
+ -- Module quantized, time: 24.32 seconds
+ -- Layer: model.layers.27 (MLP)
+ -- Linear: model.layers.27.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.27.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.27.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.026754
+ -- Module quantized, time: 27.74 seconds
+ -- Layer: model.layers.28 (Attention)
+ -- Linear: model.layers.28.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.28.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.28.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.28.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.077049
+ -- Module quantized, time: 25.52 seconds
+ -- Layer: model.layers.28 (MLP)
+ -- Linear: model.layers.28.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.28.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.28.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.027577
+ -- Module quantized, time: 30.03 seconds
+ -- Layer: model.layers.29 (Attention)
+ -- Linear: model.layers.29.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.29.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.29.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.29.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.099270
+ -- Module quantized, time: 27.61 seconds
+ -- Layer: model.layers.29 (MLP)
+ -- Linear: model.layers.29.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.29.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.29.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.026611
+ -- Module quantized, time: 31.16 seconds
+ -- Layer: model.layers.30 (Attention)
+ -- Linear: model.layers.30.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.30.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.30.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.30.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.054547
+ -- Module quantized, time: 27.33 seconds
+ -- Layer: model.layers.30 (MLP)
+ -- Linear: model.layers.30.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.30.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.30.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.027222
+ -- Module quantized, time: 33.47 seconds
+ -- Layer: model.layers.31 (Attention)
+ -- Linear: model.layers.31.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.31.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.31.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.31.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.069574
+ -- Module quantized, time: 27.68 seconds
+ -- Layer: model.layers.31 (MLP)
+ -- Linear: model.layers.31.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.31.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.31.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.028674
+ -- Module quantized, time: 30.83 seconds
+ -- Layer: model.layers.32 (Attention)
+ -- Linear: model.layers.32.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.32.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.32.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.32.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.068753
+ -- Module quantized, time: 27.58 seconds
+ -- Layer: model.layers.32 (MLP)
+ -- Linear: model.layers.32.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.32.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.32.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.029310
+ -- Module quantized, time: 30.55 seconds
+ -- Layer: model.layers.33 (Attention)
+ -- Linear: model.layers.33.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.33.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.33.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.33.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.102832
+ -- Module quantized, time: 25.91 seconds
+ -- Layer: model.layers.33 (MLP)
+ -- Linear: model.layers.33.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.33.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.33.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.032791
+ -- Module quantized, time: 33.37 seconds
+ -- Layer: model.layers.34 (Attention)
+ -- Linear: model.layers.34.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.34.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.34.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.34.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.060870
+ -- Module quantized, time: 25.99 seconds
+ -- Layer: model.layers.34 (MLP)
+ -- Linear: model.layers.34.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.34.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.34.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.035644
+ -- Module quantized, time: 33.67 seconds
+ -- Layer: model.layers.35 (Attention)
+ -- Linear: model.layers.35.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.35.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.35.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.35.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.067100
+ -- Module quantized, time: 26.71 seconds
+ -- Layer: model.layers.35 (MLP)
+ -- Linear: model.layers.35.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.35.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.35.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.034491
+ -- Module quantized, time: 32.32 seconds
+ -- Layer: model.layers.36 (Attention)
+ -- Linear: model.layers.36.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.36.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.36.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.36.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.095435
+ -- Module quantized, time: 27.44 seconds
+ -- Layer: model.layers.36 (MLP)
+ -- Linear: model.layers.36.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.36.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.36.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.036695
+ -- Module quantized, time: 33.79 seconds
+ -- Layer: model.layers.37 (Attention)
+ -- Linear: model.layers.37.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.37.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.37.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.37.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.103497
+ -- Module quantized, time: 27.12 seconds
+ -- Layer: model.layers.37 (MLP)
+ -- Linear: model.layers.37.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.37.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.37.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.037019
+ -- Module quantized, time: 30.90 seconds
+ -- Layer: model.layers.38 (Attention)
+ -- Linear: model.layers.38.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.38.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.38.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.38.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.132354
+ -- Module quantized, time: 22.59 seconds
+ -- Layer: model.layers.38 (MLP)
+ -- Linear: model.layers.38.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.38.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.38.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.033254
+ -- Module quantized, time: 28.26 seconds
+ -- Layer: model.layers.39 (Attention)
+ -- Linear: model.layers.39.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.39.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.39.self_attn.v_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Linear: model.layers.39.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.143775
+ -- Module quantized, time: 26.38 seconds
+ -- Layer: model.layers.39 (MLP)
+ -- Linear: model.layers.39.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.39.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.39.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.035453
+ -- Module quantized, time: 27.04 seconds
+ -- Layer: model.layers.40 (Attention)
+ -- Linear: model.layers.40.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.40.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.40.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.40.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.142963
+ -- Module quantized, time: 27.51 seconds
+ -- Layer: model.layers.40 (MLP)
+ -- Linear: model.layers.40.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.40.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.40.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.034273
+ -- Module quantized, time: 27.71 seconds
+ -- Layer: model.layers.41 (Attention)
+ -- Linear: model.layers.41.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.41.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.41.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.41.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.094002
+ -- Module quantized, time: 24.86 seconds
+ -- Layer: model.layers.41 (MLP)
+ -- Linear: model.layers.41.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.41.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.41.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.034239
+ -- Module quantized, time: 32.14 seconds
+ -- Layer: model.layers.42 (Attention)
+ -- Linear: model.layers.42.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.42.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.42.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.42.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.126868
+ -- Module quantized, time: 27.38 seconds
+ -- Layer: model.layers.42 (MLP)
+ -- Linear: model.layers.42.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.42.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.42.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.033924
+ -- Module quantized, time: 26.36 seconds
+ -- Layer: model.layers.43 (Attention)
+ -- Linear: model.layers.43.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.43.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.43.self_attn.v_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Linear: model.layers.43.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.104648
+ -- Module quantized, time: 22.76 seconds
+ -- Layer: model.layers.43 (MLP)
+ -- Linear: model.layers.43.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.43.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.43.mlp.down_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.035881
+ -- Module quantized, time: 27.09 seconds
+ -- Layer: model.layers.44 (Attention)
+ -- Linear: model.layers.44.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.44.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.44.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.44.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.185891
+ -- Module quantized, time: 22.73 seconds
+ -- Layer: model.layers.44 (MLP)
+ -- Linear: model.layers.44.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.44.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.44.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.031618
+ -- Module quantized, time: 25.87 seconds
+ -- Layer: model.layers.45 (Attention)
+ -- Linear: model.layers.45.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.45.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.45.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.45.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.095183
+ -- Module quantized, time: 21.68 seconds
+ -- Layer: model.layers.45 (MLP)
+ -- Linear: model.layers.45.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.45.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.45.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.032240
+ -- Module quantized, time: 27.92 seconds
+ -- Layer: model.layers.46 (Attention)
+ -- Linear: model.layers.46.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.46.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.46.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.46.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.109754
+ -- Module quantized, time: 26.59 seconds
+ -- Layer: model.layers.46 (MLP)
+ -- Linear: model.layers.46.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.46.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.46.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.032918
+ -- Module quantized, time: 33.48 seconds
+ -- Layer: model.layers.47 (Attention)
+ -- Linear: model.layers.47.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.47.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.47.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.47.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.067893
+ -- Module quantized, time: 26.36 seconds
+ -- Layer: model.layers.47 (MLP)
+ -- Linear: model.layers.47.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.47.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.47.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.032617
+ -- Module quantized, time: 25.97 seconds
+ -- Layer: model.layers.48 (Attention)
+ -- Linear: model.layers.48.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.48.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.48.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.48.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.084492
+ -- Module quantized, time: 26.56 seconds
+ -- Layer: model.layers.48 (MLP)
+ -- Linear: model.layers.48.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.48.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.48.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.028947
+ -- Module quantized, time: 27.01 seconds
+ -- Layer: model.layers.49 (Attention)
+ -- Linear: model.layers.49.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.49.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.49.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.49.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.046201
+ -- Module quantized, time: 26.43 seconds
+ -- Layer: model.layers.49 (MLP)
+ -- Linear: model.layers.49.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.49.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.49.mlp.down_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.035577
+ -- Module quantized, time: 31.62 seconds
+ -- Layer: model.layers.50 (Attention)
+ -- Linear: model.layers.50.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.50.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.50.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.50.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.085829
+ -- Module quantized, time: 27.85 seconds
+ -- Layer: model.layers.50 (MLP)
+ -- Linear: model.layers.50.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.50.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.50.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.029095
+ -- Module quantized, time: 32.42 seconds
+ -- Layer: model.layers.51 (Attention)
+ -- Linear: model.layers.51.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.51.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.51.self_attn.v_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.51.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.103514
+ -- Module quantized, time: 26.50 seconds
+ -- Layer: model.layers.51 (MLP)
+ -- Linear: model.layers.51.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.51.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.51.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.028956
+ -- Module quantized, time: 29.96 seconds
+ -- Layer: model.layers.52 (Attention)
+ -- Linear: model.layers.52.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.52.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.52.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.52.self_attn.o_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.139919
+ -- Module quantized, time: 27.87 seconds
+ -- Layer: model.layers.52 (MLP)
+ -- Linear: model.layers.52.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.52.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.52.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027000
+ -- Module quantized, time: 28.89 seconds
+ -- Layer: model.layers.53 (Attention)
+ -- Linear: model.layers.53.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.53.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.53.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.53.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.054924
+ -- Module quantized, time: 27.17 seconds
+ -- Layer: model.layers.53 (MLP)
+ -- Linear: model.layers.53.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.53.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.53.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026958
+ -- Module quantized, time: 27.22 seconds
+ -- Layer: model.layers.54 (Attention)
+ -- Linear: model.layers.54.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.54.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.54.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.54.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.066090
+ -- Module quantized, time: 22.04 seconds
+ -- Layer: model.layers.54 (MLP)
+ -- Linear: model.layers.54.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.54.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.54.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027170
+ -- Module quantized, time: 26.65 seconds
+ -- Layer: model.layers.55 (Attention)
+ -- Linear: model.layers.55.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.55.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.55.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.55.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.083436
+ -- Module quantized, time: 26.10 seconds
+ -- Layer: model.layers.55 (MLP)
+ -- Linear: model.layers.55.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.55.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.55.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026945
+ -- Module quantized, time: 28.58 seconds
+ -- Layer: model.layers.56 (Attention)
+ -- Linear: model.layers.56.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.56.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.56.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.56.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.053051
+ -- Module quantized, time: 26.47 seconds
+ -- Layer: model.layers.56 (MLP)
+ -- Linear: model.layers.56.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.56.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.56.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025709
+ -- Module quantized, time: 26.19 seconds
+ -- Layer: model.layers.57 (Attention)
+ -- Linear: model.layers.57.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.57.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.57.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.57.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.058402
+ -- Module quantized, time: 26.55 seconds
+ -- Layer: model.layers.57 (MLP)
+ -- Linear: model.layers.57.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.57.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.57.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025711
+ -- Module quantized, time: 31.49 seconds
+ -- Layer: model.layers.58 (Attention)
+ -- Linear: model.layers.58.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.58.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.58.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.58.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.040840
+ -- Module quantized, time: 26.97 seconds
+ -- Layer: model.layers.58 (MLP)
+ -- Linear: model.layers.58.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.58.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.58.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025558
+ -- Module quantized, time: 29.37 seconds
+ -- Layer: model.layers.59 (Attention)
+ -- Linear: model.layers.59.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.59.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.59.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.59.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.046186
+ -- Module quantized, time: 13.14 seconds
+ -- Layer: model.layers.59 (MLP)
+ -- Linear: model.layers.59.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.59.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.59.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025359
+ -- Module quantized, time: 24.90 seconds
+ -- Layer: model.layers.60 (Attention)
+ -- Linear: model.layers.60.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.60.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.60.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.60.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.013332
+ -- Module quantized, time: 17.75 seconds
+ -- Layer: model.layers.60 (MLP)
+ -- Linear: model.layers.60.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.60.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.60.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025858
+ -- Module quantized, time: 24.89 seconds
+ -- Layer: model.layers.61 (Attention)
+ -- Linear: model.layers.61.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.61.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.61.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.61.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.020707
+ -- Module quantized, time: 13.14 seconds
+ -- Layer: model.layers.61 (MLP)
+ -- Linear: model.layers.61.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.61.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.61.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.025925
+ -- Module quantized, time: 24.96 seconds
+ -- Layer: model.layers.62 (Attention)
+ -- Linear: model.layers.62.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.62.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.62.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.62.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.028025
+ -- Module quantized, time: 13.11 seconds
+ -- Layer: model.layers.62 (MLP)
+ -- Linear: model.layers.62.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.62.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.62.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026524
+ -- Module quantized, time: 26.40 seconds
+ -- Layer: model.layers.63 (Attention)
+ -- Linear: model.layers.63.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.63.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.63.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.63.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.025634
+ -- Module quantized, time: 13.49 seconds
+ -- Layer: model.layers.63 (MLP)
+ -- Linear: model.layers.63.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.63.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.63.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.026988
+ -- Module quantized, time: 25.00 seconds
+ -- Layer: model.layers.64 (Attention)
+ -- Linear: model.layers.64.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.64.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.64.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.64.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.042835
+ -- Module quantized, time: 15.26 seconds
+ -- Layer: model.layers.64 (MLP)
+ -- Linear: model.layers.64.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.64.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.64.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027274
+ -- Module quantized, time: 24.94 seconds
+ -- Layer: model.layers.65 (Attention)
+ -- Linear: model.layers.65.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.65.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.65.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.65.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.013343
+ -- Module quantized, time: 13.28 seconds
+ -- Layer: model.layers.65 (MLP)
+ -- Linear: model.layers.65.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.65.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.65.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.027885
+ -- Module quantized, time: 24.84 seconds
+ -- Layer: model.layers.66 (Attention)
+ -- Linear: model.layers.66.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.66.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.66.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.66.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.022447
+ -- Module quantized, time: 16.31 seconds
+ -- Layer: model.layers.66 (MLP)
+ -- Linear: model.layers.66.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.66.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.66.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.028603
+ -- Module quantized, time: 27.40 seconds
+ -- Layer: model.layers.67 (Attention)
+ -- Linear: model.layers.67.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.67.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.67.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.67.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.018397
+ -- Module quantized, time: 19.15 seconds
+ -- Layer: model.layers.67 (MLP)
+ -- Linear: model.layers.67.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.67.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.67.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.028786
+ -- Module quantized, time: 28.17 seconds
+ -- Layer: model.layers.68 (Attention)
+ -- Linear: model.layers.68.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.68.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.68.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.68.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.039072
+ -- Module quantized, time: 13.22 seconds
+ -- Layer: model.layers.68 (MLP)
+ -- Linear: model.layers.68.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.68.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.68.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.029657
+ -- Module quantized, time: 24.87 seconds
+ -- Layer: model.layers.69 (Attention)
+ -- Linear: model.layers.69.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.69.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.69.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.69.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.071121
+ -- Module quantized, time: 17.87 seconds
+ -- Layer: model.layers.69 (MLP)
+ -- Linear: model.layers.69.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.69.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.69.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.030279
+ -- Module quantized, time: 25.39 seconds
+ -- Layer: model.layers.70 (Attention)
+ -- Linear: model.layers.70.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.70.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.70.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.70.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.046089
+ -- Module quantized, time: 13.81 seconds
+ -- Layer: model.layers.70 (MLP)
+ -- Linear: model.layers.70.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.70.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.70.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.031244
+ -- Module quantized, time: 25.08 seconds
+ -- Layer: model.layers.71 (Attention)
+ -- Linear: model.layers.71.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.71.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.71.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.71.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.042839
+ -- Module quantized, time: 13.20 seconds
+ -- Layer: model.layers.71 (MLP)
+ -- Linear: model.layers.71.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.71.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.71.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.031825
+ -- Module quantized, time: 24.88 seconds
+ -- Layer: model.layers.72 (Attention)
+ -- Linear: model.layers.72.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.72.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.72.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.72.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.052886
+ -- Module quantized, time: 18.07 seconds
+ -- Layer: model.layers.72 (MLP)
+ -- Linear: model.layers.72.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.72.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.72.mlp.down_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Layer rfn_error: 0.032795
+ -- Module quantized, time: 24.90 seconds
+ -- Layer: model.layers.73 (Attention)
+ -- Linear: model.layers.73.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.73.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.73.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.73.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.043731
+ -- Module quantized, time: 15.19 seconds
+ -- Layer: model.layers.73 (MLP)
+ -- Linear: model.layers.73.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.73.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.73.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.037518
+ -- Module quantized, time: 28.87 seconds
+ -- Layer: model.layers.74 (Attention)
+ -- Linear: model.layers.74.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.74.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.74.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.74.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.066649
+ -- Module quantized, time: 24.84 seconds
+ -- Layer: model.layers.74 (MLP)
+ -- Linear: model.layers.74.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.74.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.74.mlp.down_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Layer rfn_error: 0.037935
+ -- Module quantized, time: 26.88 seconds
+ -- Layer: model.layers.75 (Attention)
+ -- Linear: model.layers.75.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.75.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.75.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.75.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.092725
+ -- Module quantized, time: 13.37 seconds
+ -- Layer: model.layers.75 (MLP)
+ -- Linear: model.layers.75.mlp.gate_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.75.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.75.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.048835
+ -- Module quantized, time: 26.80 seconds
+ -- Layer: model.layers.76 (Attention)
+ -- Linear: model.layers.76.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.76.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.76.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.76.self_attn.o_proj -> 0.25:4b/0.75:2b 32g s4, 2.63 bpw
+ -- Layer rfn_error: 0.120299
+ -- Module quantized, time: 18.94 seconds
+ -- Layer: model.layers.76 (MLP)
+ -- Linear: model.layers.76.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.76.mlp.up_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.76.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.055644
+ -- Module quantized, time: 27.07 seconds
+ -- Layer: model.layers.77 (Attention)
+ -- Linear: model.layers.77.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.77.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.77.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.77.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.089215
+ -- Module quantized, time: 17.83 seconds
+ -- Layer: model.layers.77 (MLP)
+ -- Linear: model.layers.77.mlp.gate_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.77.mlp.up_proj -> 0.1:4b/0.4:3b/0.5:2b 32g s4, 2.72 bpw
+ -- Linear: model.layers.77.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.059162
+ -- Module quantized, time: 27.28 seconds
+ -- Layer: model.layers.78 (Attention)
+ -- Linear: model.layers.78.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.78.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.78.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.78.self_attn.o_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Layer rfn_error: 0.082245
+ -- Module quantized, time: 20.90 seconds
+ -- Layer: model.layers.78 (MLP)
+ -- Linear: model.layers.78.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.78.mlp.up_proj -> 0.25:3b/0.75:2b 32g s4, 2.38 bpw
+ -- Linear: model.layers.78.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.063739
+ -- Module quantized, time: 26.35 seconds
+ -- Layer: model.layers.79 (Attention)
+ -- Linear: model.layers.79.self_attn.q_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.self_attn.k_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.self_attn.v_proj -> 1.0:3b 128g s4, 3.03 bpw
+ -- Linear: model.layers.79.self_attn.o_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.055278
+ -- Module quantized, time: 17.80 seconds
+ -- Layer: model.layers.79 (MLP)
+ -- Linear: model.layers.79.mlp.gate_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.mlp.up_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Linear: model.layers.79.mlp.down_proj -> 0.05:3b/0.95:2b 32g s4, 2.17 bpw
+ -- Layer rfn_error: 0.089362
+ -- Module quantized, time: 27.03 seconds
+ -- Layer: model.norm (RMSNorm)
+ -- Layer rfn_error: 0.000000
+ -- Module quantized, time: 9.12 seconds
+ -- Layer: lm_head (Linear)
+ -- Linear: lm_head -> 0.15:8b/0.85:6b 32g s4, 6.44 bpw
+ -- Layer rfn_error: 0.009974
+ -- Calibration perplexity (quant): 2342.9351
+ -- Module quantized, time: 23.19 seconds
+ -- Compiling output file...
+ -- Writing shard 1...
+ -- Writing shard 2...
+ -- Writing shard 3...
+ -- Saved model weights:
+ -- Saved model weights:
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw/output-00001-of-00003.safetensors (8,136 MB)
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw/output-00002-of-00003.safetensors (8,179 MB)
+ --   /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw/output-00003-of-00003.safetensors (6,446 MB)
+ -- Finished
+Copying original model's model.* and *.json files to new quant directory: /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw
+cp: warning: source file '/home/ubuntu/exllamav2/davidsvaughn/llamav2-70b-merged/tokenizer.json' specified more than once

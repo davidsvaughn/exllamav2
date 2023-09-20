@@ -94,25 +94,27 @@ settings.top_p = args.top_p # 50
 settings.token_repetition_penalty = 1.15
 settings.disallow_tokens(tokenizer, [tokenizer.eos_token_id])
 
-
-generator.warmup()
-time_begin = time.time()
-
-sep = '\n' # '###'
-responses = []
-n = args.num_samples
-for _ in range(n):
-    output = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
-    response = output[len(prompt):].strip()
-    response = response.split(sep)[0]
-    responses.append(response)
-
-time_end = time.time()
-time_total = time_end - time_begin
+n, sep = args.num_samples, '\n' # '###'
+# responses = []
 
 print(prompt)
 print('--------->')
-for i,response in enumerate(responses):
-    print(f"{i}.\t{response}")
+
+generator.warmup()
+time_begin, t_minus, tok2 = time.time(), 0, 0
+
+for i in range(n):
+    output = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
+    t1 = time.time()
+    response = output[len(prompt):].strip()
+    response = response.split(sep)[0]
+    print(f"{i+1}.\t{response}")
+    t_minus += (time.time()-t1)
+    tok2 += len(response.split())
+    # responses.append(response)
+
+time_total = time.time() - time_begin - t_minus
+# for i,response in enumerate(responses): print(f"{i}.\t{response}")
 print('<---------\n')
-print(f"Responses generated in {time_total:.2f} seconds, {n*max_new_tokens} tokens, {n*max_new_tokens / time_total:.2f} tokens/second")
+
+print(f"Responses generated in {time_total:.2f} seconds, {n*max_new_tokens} tokens, {n*max_new_tokens / time_total:.2f} ({tok2/time_total:.2f}) tokens/second")

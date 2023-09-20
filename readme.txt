@@ -53,9 +53,9 @@ bash quantize.sh 3.0
 
 # upload model  [ https://huggingface.co/docs/huggingface_hub/guides/upload ]
 
-mkdir qmodels/tmp-70b-2.7bpw
-mv qmodels/llamav2-70b-2.7bpw/out_tensor qmodels/tmp-70b-2.7bpw
-huggingface-cli upload davidsvaughn/llamav2-70b-2.7bpw qmodels/llamav2-70b-2.7bpw
+mkdir qmodels/tmp-70b-3.5bpw
+mv qmodels/llamav2-70b-3.5bpw/out_tensor qmodels/tmp-70b-3.5bpw
+huggingface-cli upload davidsvaughn/llamav2-70b-3.5bpw qmodels/llamav2-70b-3.5bpw
 
 
 # retrieve model (local)
@@ -64,10 +64,14 @@ rsync -azP -e "ssh -i $LAMBDA_PEM" $LIP:/home/ubuntu/exllamav2/qmodels/llamav2-7
 
 # test quantized model!
 
+python test_inference.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt"
+
 python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 40 -tp 0.9 -n 5
 
 python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 40 -tp 0.9 -n 5
 
+# max_seq_length ??  [ https://github.com/turboderp/exllamav2/issues/47 ]
+-l 1024
 
 
 
