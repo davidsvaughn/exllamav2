@@ -32,7 +32,12 @@ torch.set_printoptions(precision = 10)
 parser = argparse.ArgumentParser(description = "Get feedback with ExLlamaV2 model")
 parser.add_argument("-m", "--model_dir", type = str, help = "Path to model directory")
 parser.add_argument("-p", "--prompt", type = str, help = "Generate from prompt")
+parser.add_argument("-n", "--num_samples", type = int, default = 1, help = "number of samples")
 parser.add_argument("-r", "--random_seed", type = int, default = -1, help = "random seed")
+
+parser.add_argument("-tm", "--temp", type = float, default = 0.65, help = "temperature")
+parser.add_argument("-tk", "--top_k", type = int, default = 50, help = "top_k")
+parser.add_argument("-tp", "--top_p", type = float, default = 0.9, help = "top_p")
 
 parser.add_argument("-l", "--length", type = int, help = "Maximum sequence length")
 parser.add_argument("-rs", "--rope_scale", type = float, default = 1.0, help = "RoPE scaling factor")
@@ -61,8 +66,9 @@ config.no_flash_attn = args.no_flash_attn
 max_new_tokens = args.tokens
 seed = args.random_seed
 if seed<0:
-    seed = random.randint(0,100000)
+    seed = random.randint(0,1000000)
     print(f"random_seed = {seed}")
+random.seed(seed)
 
 # get prompt
 prompt = args.prompt
@@ -82,9 +88,9 @@ generator = ExLlamaV2BaseGenerator(model, cache, tokenizer)
 
 # Generate some text
 settings = ExLlamaV2Sampler.Settings()
-settings.temperature = 0.85
-settings.top_k = 50
-settings.top_p = 0.8
+settings.temperature = args.temp # 0.85
+settings.top_k = args.top_k # 0.8
+settings.top_p = args.top_p # 50
 settings.token_repetition_penalty = 1.15
 settings.disallow_tokens(tokenizer, [tokenizer.eos_token_id])
 
@@ -92,17 +98,20 @@ settings.disallow_tokens(tokenizer, [tokenizer.eos_token_id])
 generator.warmup()
 time_begin = time.time()
 
-output = generator.generate_simple(prompt, settings, max_new_tokens, seed=seed)
+sep = '\n' # '###'
+responses = []
+for _ in range(args.num_samples):
+    output = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
+    response = output[len(prompt):].strip()
+    response = response.split(sep)[0]
+    responses.append(response)
 
 time_end = time.time()
 time_total = time_end - time_begin
 
-response = output[len(prompt):].strip()
-sep = '\n' # '###'
-response = response.split(sep)[0]
-
 print(prompt)
-print('------->')
-print(response)
-print('<-------')
-print(f"Response generated in {time_total:.2f} seconds, {max_new_tokens} tokens, {max_new_tokens / time_total:.2f} tokens/second")
+print('--------->')
+for i,response in enumerate(responses):
+    print(f"{i}.\t{response}")
+print('<---------')
+print(f"Responses generated in {time_total:.2f} seconds, {max_new_tokens} tokens, {max_new_tokens / time_total:.2f} tokens/second")
