@@ -64,11 +64,13 @@ rsync -azP -e "ssh -i $LAMBDA_PEM" $LIP:/home/ubuntu/exllamav2/qmodels/llamav2-7
 
 # test quantized model!
 
-python test_inference.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt"
+python test_inference.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt" -l 1024
 
-python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 40 -tp 0.9 -n 5
+python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.5bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
 
-python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 40 -tp 0.9 -n 5
+python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-3.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
+
+python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
 
 # max_seq_length ??  [ https://github.com/turboderp/exllamav2/issues/47 ]
 -l 1024
