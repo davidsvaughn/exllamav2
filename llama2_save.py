@@ -4,7 +4,6 @@ from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # https://github.com/huggingface/peft/issues/692
-
 # https://huggingface.co/TheBloke/guanaco-65B-GPTQ/discussions/2
 
 def mkdirs(path):
@@ -30,10 +29,25 @@ if '-7b-' in model_name:
         device_map={"": 0}
     )     
 else: # 13b, 70b
+    # model = AutoModelForCausalLM.from_pretrained(
+    #     model_name,
+    #     load_in_4bit=True,
+    #     device_map={"": 0}
+    # )
+
+    quantization_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type='nf4'
+    ),
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
+        low_cpu_mem_usage=True,
         load_in_4bit=True,
-        device_map={"": 0}
+        quantization_config=quantization_config,
+        torch_dtype=torch.float16,
+        device_map='auto'
     )
 
 print(f"\nStep {step}: load peft model"); step+=1
