@@ -5,11 +5,11 @@ exllamav2
 ====================================================================================================
 https://github.com/turboderp/exllamav2
 ==============================================================
-== LAMBDA : A10 ==
+== LAMBDA  ==
 
 LAMBDA_PEM  AWS_W2_PEM
 
-export LIP=ubuntu@209.20.156.105
+export LIP=ubuntu@209.20.157.61
 ssh -i $LAMBDA_PEM $LIP
 
 ------------------------------------------------
@@ -20,7 +20,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.9 -y
 python3.9 --version
 
-sudo apt install python3.9-dev
+sudo apt install python3.9-dev -y
+
+# sudo apt install python3-pip -y
 
 ------------------------------------------------
 
@@ -52,10 +54,20 @@ python test_inference.py -m /home/ubuntu/code/qmodels/llamav2-7b-3.0bpw -p "prom
 
 
 
+=======================================
+vast.ai
+=======================================
+
+ssh-keygen -t rsa
+ssh-add; ssh-add -l
+cat ~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCBQ1qHPekHnWWveLwOY25OTBtbrZFrWmHC+7h7lDtqrS/umDNHweybsJLO1Lr3LrbX1212GiqgCQvbBjiibgl2paQjJvHcgdhURdqeUKrnBZq2FUgBRc3z/SeFR1UY4woNNADGKwSNBUcJ7YD3hBfxLbDsRe6bHoFKZoqGtgNMl5YP47EGokM6GqoYgEyqmC27RbIxBmoFfgthFRuBJ4svbOlK/DGD1umECRMuwMziUS5Iruc+Mz9cUU2TJIAqkKFMUkivwI9Bw5BG9p3L4ETr3u4b1+M8IdS2/MEsoyRvau0EI3x9xVF4YRLRyf31M+W/Z8MlQB1/mq2XxiqC4abRCdruEcdFa54eChO1ENBzsOqmt4yIM4IX6L2UcjSlAvciANo7n97hJqxCMDzlhCfYa3duzMZ7ElwAaJTXLQuC48AhAhTUyvAVMvISQQTpytR0NdFwXsuvCEVDbMGjCmhxazguRt6a7QO8KW6qnmmnzt7fiDXrGAUxLzYsDI+OTT8= david@camden
 
 
+ssh -p 50440 root@145.14.10.31 -L 8080:localhost:8080
 
-
+export LD_LIBRARY_PATH=/usr/local/cuda-12.0/targets/x86_64-linux/lib
 
 
 
