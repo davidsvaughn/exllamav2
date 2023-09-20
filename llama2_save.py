@@ -72,13 +72,6 @@ model = PeftModel.from_pretrained(model, adapter_name)
 print(f"\nStep {step}: merge and unload"); step+=1
 model = model.merge_and_unload()
 
-print(f"\nStep {step}: load tokenizer from hub"); step+=1
-tokenizer = AutoTokenizer.from_pretrained(adapter_name)
-
-###########################################
-# push merged model to HUB
-###########################################
-
 mkdirs(merged_model_name)
 
 print(f"\nStep {step}: save model to {merged_model_name}"); step+=1
@@ -89,6 +82,11 @@ model.save_pretrained(
     safe_serialization=True,
     max_shard_size="10GB",
 )
+
+del model
+
+print(f"\nStep {step}: load tokenizer from hub"); step+=1
+tokenizer = AutoTokenizer.from_pretrained(adapter_name)
 
 print(f"\nStep {step}: save tokenizer to {merged_model_name}"); step+=1
 tokenizer.save_pretrained(
