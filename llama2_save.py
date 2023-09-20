@@ -35,6 +35,7 @@ else: # 13b, 70b
     #     device_map={"": 0}
     # )
 
+    from transformers import BitsAndBytesConfig
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_compute_dtype=torch.bfloat16,
