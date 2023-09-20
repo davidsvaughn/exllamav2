@@ -50,7 +50,7 @@ bash quantize.sh
 
 python test_inference.py -m /home/ubuntu/code/qmodels/llamav2-7b-3.0bpw -p "prompts/prompt3.txt"
 
-
+rsync -azP -e "ssh -i $LAMBDA_PEM" $LIP:/home/ubuntu/exllamav2/qmodels /home/david/code/davidsvaughn/LLM-utils/exllamav2/models
 
 
 
@@ -68,8 +68,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCBQ1qHPekHnWWveLwOY25OTBtbrZFrWmHC+7h7lDtq
 ssh -p 50440 root@145.14.10.31 -L 8080:localhost:8080
 
 export LD_LIBRARY_PATH=/usr/local/cuda-12.0/targets/x86_64-linux/lib
-
-
 
 
 

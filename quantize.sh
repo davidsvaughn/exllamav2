@@ -15,8 +15,8 @@ set -eEuo pipefail
 ########################################################################
 
 bits="3.0"
-model_dir="/home/ubuntu/code/davidsvaughn/llamav2-70b-merged"
-quant_dir="/home/ubuntu/code/qmodels/llamav2-70b-${bits}bpw"
+model_dir="/home/ubuntu/exllamav2/davidsvaughn/llamav2-70b-merged"
+quant_dir="/home/ubuntu/exllamav2/qmodels/llamav2-70b-${bits}bpw"
 
 ppl_file="wikitext-train-00000-of-00002.parquet"
 # ppl_file="wikitext-test.parquet"
