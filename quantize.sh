@@ -18,8 +18,9 @@ bits="4.65"
 model_dir="/home/ubuntu/code/davidsvaughn/llamav2-70b-merged"
 quant_dir="/home/ubuntu/code/qmodels/llamav2-70b-${bits}bpw"
 
-ppl_file="0007.parquet"
+ppl_file="wikitext-train-00000-of-00002.parquet"
 # ppl_file="wikitext-test.parquet"
+# ppl_file="0007.parquet"
 
 # bits="4.65"
 # quant_dir="${model_dir}-${bits}bpw"
@@ -54,9 +55,14 @@ fi
 
 cd "$ex_dir"
 if [ ! -f "$ppl_file" ]; then
-  echo "Downloading ThePile parquet file for quantizing perplexity calculation"
-  wget https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated/resolve/refs%2Fconvert%2Fparquet/default/train/$ppl_file
-  # wget https://huggingface.co/datasets/wikitext/resolve/f1b89292ce7c99edf038fa06865dd97c29defa94/wikitext-103-v1/wikitext-test.parquet
+  if [[ "$ppl_file" == *"wiki"* ]]; then
+    echo "Downloading wikitext parquet file for quantizing perplexity calculation"
+    wget https://huggingface.co/datasets/wikitext/resolve/f1b89292ce7c99edf038fa06865dd97c29defa94/wikitext-103-v1/$ppl_file
+    # wget https://huggingface.co/datasets/wikitext/resolve/f1b89292ce7c99edf038fa06865dd97c29defa94/wikitext-2-v1/$ppl_file
+  else
+    echo "Downloading ThePile parquet file for quantizing perplexity calculation"
+    wget https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated/resolve/refs%2Fconvert%2Fparquet/default/train/$ppl_file
+  fi
 fi
 
 if [ -f "$measurement_file" ]; then
