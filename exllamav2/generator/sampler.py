@@ -17,6 +17,8 @@ class ExLlamaV2Sampler:
 
         token_bias = None
 
+        stop_tokens = None
+        stop_sequences = None
 
         def clone(self):
 
@@ -28,6 +30,9 @@ class ExLlamaV2Sampler:
             c.token_repetition_range = self.token_repetition_range
             c.token_repetition_decay = self.token_repetition_decay
             c.token_bias = c.token_bias
+
+            c.stop_tokens = self.stop_tokens
+            c.stop_sequences = self.stop_sequences
 
             return c
 

@@ -40,6 +40,9 @@ pip3 install -r requirements.txt
 
 # Successfully installed accelerate-0.23.0 cramjam-2.7.0 fastparquet-2023.8.0 huggingface-hub-0.17.2 ninja-1.11.1 packaging-23.1 pandas-2.1.0 peft-0.4.0 psutil-5.9.5 python-dateutil-2.8.2 pytz-2023.3.post1 pyyaml-6.0.1 regex-2023.8.8 safetensors-0.3.3 sentencepiece-0.1.99 six-1.16.0 tokenizers-0.13.3 tqdm-4.66.1 transformers-4.33.2 tzdata-2023.3
 
+# install flash attention?  2?
+pip3 install flash-attn --no-build-isolation
+
 export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
 export HUG_READ_TOKEN=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
 huggingface-cli login --token $HUG_READ_TOKEN

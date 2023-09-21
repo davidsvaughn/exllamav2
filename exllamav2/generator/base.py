@@ -60,10 +60,22 @@ class ExLlamaV2BaseGenerator:
             token, _ = ExLlamaV2Sampler.sample(logits, gen_settings, self.sequence_ids, random.random())
             self.sequence_ids = torch.cat([self.sequence_ids, token], dim = 1)
 
-        text = self.tokenizer.decode(self.sequence_ids)
+            if token == self.tokenizer.eos_token_id:
+                break
+            # if gen_settings.stop_tokens is not None and token in gen_settings.stop_tokens:
+            #     break
+            # if gen_settings.stop_sequence is not None and self.sequence_ids[:, -len(gen_settings.stop_sequence):].tolist() == gen_settings.stop_sequence:
+            #     break
 
-        if isinstance(prompt, str): return text[0]
-        return text
+        num_prompt_tokens = ids.shape[-1]
+        num_gen_tokens = self.sequence_ids.shape[-1] - num_prompt_tokens
+
+        # text = self.tokenizer.decode(self.sequence_ids)
+        text = self.tokenizer.decode(text[:, num_prompt_tokens:])
+
+        if isinstance(prompt, str): return text[0], num_gen_tokens
+
+        return text, num_gen_tokens
 
 
     def _gen_begin_base(self, input_ids, mask = None):
