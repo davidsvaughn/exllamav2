@@ -96,13 +96,13 @@ settings.token_repetition_penalty = 1.15
 # settings.stop_tokens = [tokenizer.eos_token_id]
 # settings.stop_sequence = tokenizer.encode('###')
 # responses = []
+
 print(prompt)
 generator.warmup()
 
-
-#===================================================================================================
 print('--------->')
 time_begin, t_minus, num_toks_total = time.time(), 0, 0
+
 #-------------------------------------------------------
 for i in range(args.num_samples):
     response, num_gen_toks = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
@@ -113,24 +113,7 @@ for i in range(args.num_samples):
     # responses.append(response)
 # for i,response in enumerate(responses): print(f"{i}.\t{response}")
 #-------------------------------------------------------
-time_total = time.time() - time_begin - t_minus
-print('<---------\n')
-print(f"Responses generated in {time_total:.2f} seconds, {num_toks_total} tokens, {num_toks_total / time_total:.2f} tokens/second")
 
-#===================================================================================================
-
-# experimental...
-print('--------->')
-time_begin, t_minus, num_toks_total = time.time(), 0, 0
-#-------------------------------------------------------
-responses, num_toks_total = generator.generate_simple_samples(prompt, settings, max_new_tokens, 
-                                                              num_samples=args.num_samples, 
-                                                              seed=random.randint(0,1000000))
-t1 = time.time()
-for i,response in enumerate(responses):
-    print(f"{i+1}.\t{response}")
-t_minus = time.time()-t1
-#------------------------------------------------
 time_total = time.time() - time_begin - t_minus
 print('<---------\n')
 print(f"Responses generated in {time_total:.2f} seconds, {num_toks_total} tokens, {num_toks_total / time_total:.2f} tokens/second")
