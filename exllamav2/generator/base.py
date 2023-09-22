@@ -71,7 +71,7 @@ class ExLlamaV2BaseGenerator:
         num_gen_tokens = self.sequence_ids.shape[-1] - num_prompt_tokens
 
         # text = self.tokenizer.decode(self.sequence_ids)
-        text = self.tokenizer.decode(text[:, num_prompt_tokens:])
+        text = self.tokenizer.decode(self.sequence_ids[:, num_prompt_tokens:])
 
         if isinstance(prompt, str): return text[0], num_gen_tokens
 

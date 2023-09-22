@@ -5,7 +5,16 @@ exllamav2
 ====================================================================================================
 https://github.com/turboderp/exllamav2
 ==============================================================
-== LAMBDA  ==
+
+
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+----------------------------------- QUANTIZE MODEL -----------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+
 
 LAMBDA_PEM  AWS_W2_PEM
 
@@ -13,17 +22,15 @@ export LIP=ubuntu@209.20.157.61
 ssh -i $LAMBDA_PEM $LIP
 
 ------------------------------------------------
+# install python3.9
 sudo apt update
-# sudo apt upgrade -y
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.9 -y
 python3.9 --version
 
 sudo apt install python3.9-dev -y
-
 # sudo apt install python3-pip -y
-
 ------------------------------------------------
 
 virtualenv -p python3.9 venv && source venv/bin/activate
@@ -85,6 +92,63 @@ python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "
 
 
 
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------- RUN QUANTIZED MODEL ---------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+
+
+export LIP=ubuntu@209.20.157.61
+ssh -i $LAMBDA_PEM $LIP
+
+------------------------------------------------
+# install python3.9
+sudo apt update
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.9 -y
+python3.9 --version
+
+sudo apt install python3.9-dev -y
+# sudo apt install python3-pip -y
+------------------------------------------------
+
+virtualenv -p python3.9 venv && source venv/bin/activate
+git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
+pip3 install -r requirements.txt
+
+# install flash attention?
+pip3 install flash-attn --no-build-isolation
+
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export HUG_READ_TOKEN=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
+huggingface-cli login --token $HUG_READ_TOKEN
+
+export BITS=4.0
+
+git lfs install
+
+git clone git@hf.co:davidsvaughn/llamav2-70b-"$BITS"bpw
+
+python gen_feedback.py -m davidsvaughn/llamav2-70b-"$BITS"bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -97,14 +161,61 @@ python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "
 =======================================
 vast.ai
 =======================================
-
 ssh-keygen -t rsa
 ssh-add; ssh-add -l
 cat ~/.ssh/id_rsa.pub
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCBQ1qHPekHnWWveLwOY25OTBtbrZFrWmHC+7h7lDtqrS/umDNHweybsJLO1Lr3LrbX1212GiqgCQvbBjiibgl2paQjJvHcgdhURdqeUKrnBZq2FUgBRc3z/SeFR1UY4woNNADGKwSNBUcJ7YD3hBfxLbDsRe6bHoFKZoqGtgNMl5YP47EGokM6GqoYgEyqmC27RbIxBmoFfgthFRuBJ4svbOlK/DGD1umECRMuwMziUS5Iruc+Mz9cUU2TJIAqkKFMUkivwI9Bw5BG9p3L4ETr3u4b1+M8IdS2/MEsoyRvau0EI3x9xVF4YRLRyf31M+W/Z8MlQB1/mq2XxiqC4abRCdruEcdFa54eChO1ENBzsOqmt4yIM4IX6L2UcjSlAvciANo7n97hJqxCMDzlhCfYa3duzMZ7ElwAaJTXLQuC48AhAhTUyvAVMvISQQTpytR0NdFwXsuvCEVDbMGjCmhxazguRt6a7QO8KW6qnmmnzt7fiDXrGAUxLzYsDI+OTT8= david@camden
+------------------------------------------------------------------------------------
+
+ssh -p 31103 root@99.69.216.245 -L 8080:localhost:8080
+
+------------------------------------------------------------------------------------
+Welcome to your vast.ai container! This session is running in `tmux`.
+To disconnect without closing your processes, press ctrl+b, release, then d.
+To disable auto-tmux, run `touch ~/.no_auto_tmux` and reconnect. See also https://tmuxcheatsheet.com/
+------------------------------------------------------------------------------------
+
+------------------------------------------------
+# install python3.9
+sudo apt update
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.9 -y
+python3.9 --version
+sudo apt install python3.9-dev -y
+
+# install pip3, virtualenv
+sudo apt install python3-pip -y
+pip3 install virtualenv
+------------------------------------------------
+
+git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
+virtualenv -p python3.9 venv && source venv/bin/activate
+# pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+pip3 install -r requirements.txt
+# install flash attention?
+pip3 install flash-attn --no-build-isolation
+sudo apt-get install git-lfs
+git lfs install
+
+# login huggingface
+export HUG_READ_TOKEN=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
+huggingface-cli login --token $HUG_READ_TOKEN
+
+# download model
+export BITS=4.0
+# git clone git@hf.co:davidsvaughn/llamav2-70b-"$BITS"bpw
+git clone https://huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
+davidsvaughn@gmail.com
+5*gY8kpauf23.Wp
+
+# ????
+git clone https://davidsvaughn@gmail.com:5*gY8kpauf23.Wp@huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
+git clone https://"$HUG_READ_TOKEN"@huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
+git clone https://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@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 
 
-ssh -p 50440 root@145.14.10.31 -L 8080:localhost:8080
-
-export LD_LIBRARY_PATH=/usr/local/cuda-12.0/targets/x86_64-linux/lib
+# run!
+python gen_feedback.py -m davidsvaughn/llamav2-70b-"$BITS"bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
