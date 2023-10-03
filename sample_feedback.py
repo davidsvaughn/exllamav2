@@ -140,9 +140,9 @@ for i in range(I,J):
 
     #-------------------------------------------------------
     for i in range(args.num_samples):
-        settings.temperature = random.uniform(0.3, 0.9)
-        settings.top_p = random.uniform(0.75, 0.95)
-        settings.top_k = random.randint(30, 60)
+        settings.temperature = random.uniform(0.4, 1)
+        settings.top_p = random.uniform(0.85, 0.97)
+        settings.top_k = random.randint(40, 60)
 
         response, num_gen_toks = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))
         t1 = time.time()
