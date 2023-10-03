@@ -167,8 +167,20 @@ cat ~/.ssh/id_rsa.pub
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCBQ1qHPekHnWWveLwOY25OTBtbrZFrWmHC+7h7lDtqrS/umDNHweybsJLO1Lr3LrbX1212GiqgCQvbBjiibgl2paQjJvHcgdhURdqeUKrnBZq2FUgBRc3z/SeFR1UY4woNNADGKwSNBUcJ7YD3hBfxLbDsRe6bHoFKZoqGtgNMl5YP47EGokM6GqoYgEyqmC27RbIxBmoFfgthFRuBJ4svbOlK/DGD1umECRMuwMziUS5Iruc+Mz9cUU2TJIAqkKFMUkivwI9Bw5BG9p3L4ETr3u4b1+M8IdS2/MEsoyRvau0EI3x9xVF4YRLRyf31M+W/Z8MlQB1/mq2XxiqC4abRCdruEcdFa54eChO1ENBzsOqmt4yIM4IX6L2UcjSlAvciANo7n97hJqxCMDzlhCfYa3duzMZ7ElwAaJTXLQuC48AhAhTUyvAVMvISQQTpytR0NdFwXsuvCEVDbMGjCmhxazguRt6a7QO8KW6qnmmnzt7fiDXrGAUxLzYsDI+OTT8= david@camden
 ------------------------------------------------------------------------------------
+CLI
 
-ssh -p 31103 root@99.69.216.245 -L 8080:localhost:8080
+vastai set api-key f664b2d423657ae341a31e87ed114eba705ac0029c0dc02722525b47bb9d18b6
+
+vastai search offers 'gpu_name=A100_PCIE rentable=any gpu_ram>35 disk_space>200'
+vastai search offers 'num_gpus=1 gpu_ram>35 disk_space>200'
+vastai create instance 7112000 --image nvidia/cuda:12.0.1-devel-ubuntu20.04 --disk 200
+
+------------------------------------------------------------------------------------
+
+ssh -p 11528 root@149.11.242.18 -L 8080:localhost:8080
+
+## copy data !!!
+rsync -azP -e "ssh -p 11528" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@149.11.242.18:/root
 
 ------------------------------------------------------------------------------------
 Welcome to your vast.ai container! This session is running in `tmux`.
@@ -176,8 +188,7 @@ To disconnect without closing your processes, press ctrl+b, release, then d.
 To disable auto-tmux, run `touch ~/.no_auto_tmux` and reconnect. See also https://tmuxcheatsheet.com/
 ------------------------------------------------------------------------------------
 
-------------------------------------------------
-# install python3.9
+# install python3.9...
 sudo apt update
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -185,37 +196,38 @@ sudo apt install python3.9 -y
 python3.9 --version
 sudo apt install python3.9-dev -y
 
-# install pip3, virtualenv
+# install pip3, virtualenv...
 sudo apt install python3-pip -y
 pip3 install virtualenv
-------------------------------------------------
 
+# install packages...
 git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
 virtualenv -p python3.9 venv && source venv/bin/activate
 # pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
 pip3 install -r requirements.txt
-# install flash attention?
+# install flash attention (?)
 pip3 install flash-attn --no-build-isolation
 sudo apt-get install git-lfs
 git lfs install
 
-# login huggingface
+# download model ####xxxx git clone git@hf.co:davidsvaughn/llamav2-70b-4.0bpw
+git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
+-> davidsvaughn@gmail.com
+-> 5*gY8kpauf23.Wp
+
+# run!!!
+python gen_feedback.py -m llamav2-70b-4.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 10 -l 1024
+
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 5 -l 1024 -I 0 -J 10
+
+
+--- ??? -----------------------------------------------------------------------------------------------------
+# login huggingface...
 export HUG_READ_TOKEN=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
 huggingface-cli login --token $HUG_READ_TOKEN
-
-# download model
-export BITS=4.0
-# git clone git@hf.co:davidsvaughn/llamav2-70b-"$BITS"bpw
-git clone https://huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
-davidsvaughn@gmail.com
-5*gY8kpauf23.Wp
-
 # ????
-git clone https://davidsvaughn@gmail.com:5*gY8kpauf23.Wp@huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
-git clone https://"$HUG_READ_TOKEN"@huggingface.co/davidsvaughn/llamav2-70b-"$BITS"bpw
+git clone https://"davidsvaughn@gmail.com":5*gY8kpauf23.Wp@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
+git clone https://"$HUG_READ_TOKEN"@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 git clone https://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@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
-
-
-# run!
-python gen_feedback.py -m davidsvaughn/llamav2-70b-"$BITS"bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 5 -l 1024
+-------------------------------------------------------------------------------------------------------------
