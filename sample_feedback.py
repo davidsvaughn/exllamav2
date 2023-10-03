@@ -122,6 +122,8 @@ settings.top_p = args.top_p # 50
 #-------------------------------------------------------
 
 for i in range(I,J):
+    if i >= len(dataset):
+        break
     sample = dataset[i]
     uid = sample["id"]
     text = sample["text"]
@@ -141,7 +143,7 @@ for i in range(I,J):
     #-------------------------------------------------------
     for i in range(args.num_samples):
         settings.temperature = random.uniform(0.4, 1)
-        settings.top_p = random.uniform(0.85, 0.97)
+        settings.top_p = random.uniform(0.85, 0.98)
         settings.top_k = random.randint(40, 60)
 
         response, num_gen_toks = generator.generate_simple(prompt, settings, max_new_tokens, seed=random.randint(0,1000000))

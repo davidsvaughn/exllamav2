@@ -99,7 +99,6 @@ python gen_feedback.py -m /home/ubuntu/exllamav2/qmodels/llamav2-70b-2.7bpw -p "
 --------------------------------------------------------------------------------------
 
 
-
 export LIP=ubuntu@209.20.157.61
 ssh -i $LAMBDA_PEM $LIP
 
@@ -140,27 +139,62 @@ python gen_feedback.py -m davidsvaughn/llamav2-70b-"$BITS"bpw -p "prompts/prompt
 
 
 
+================================================================================================================
+================================================================================================================
+================================================================================================================
+RESAMPLING!!!!!!
 
 
 
 
 
 
+============================================================================
+Lambda
+============================================================================
+
+export LIP=ubuntu@209.20.159.239
+ssh -i $LAMBDA_PEM $LIP
+
+## copy data !!!
+rsync -azP -e "ssh -i $LAMBDA_PEM" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data $LIP:/home/ubuntu
+
+-----------------
+------------------------------------------------
+# install python3.9
+sudo apt update && sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.9 -y
+python3.9 --version
+
+sudo apt install python3.9-dev -y
+# sudo apt install python3-pip -y
+------------------------------------------------
+
+virtualenv -p python3.9 venv && source venv/bin/activate
+git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
+pip3 install -r requirements.txt
+
+# install flash attention?
+pip3 install flash-attn --no-build-isolation
+
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export HUG_READ_TOKEN=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
+huggingface-cli login --token $HUG_READ_TOKEN
+
+sudo apt-get install git-lfs && git lfs install
+
+# download model ####xxxx git clone git@hf.co:davidsvaughn/llamav2-70b-4.0bpw
+git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
+-> davidsvaughn@gmail.com
+-> 5*gY8kpauf23.Wp
+
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/home/ubuntu/data" -n 10 -l 1024 -I 0 -J 2000
 
 
-
-
-
-
-
-
-
-
-
-
-=======================================
+============================================================================
 vast.ai
-=======================================
+============================================================================
 ssh-keygen -t rsa
 ssh-add; ssh-add -l
 cat ~/.ssh/id_rsa.pub
@@ -179,8 +213,12 @@ vastai create instance 7112000 --image nvidia/cuda:12.0.1-devel-ubuntu20.04 --di
 
 ssh -p 11528 root@149.11.242.18 -L 8080:localhost:8080
 
+ssh -p 40023 root@50.115.47.83 -L 8080:localhost:8080
+
 ## copy data !!!
 rsync -azP -e "ssh -p 11528" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@149.11.242.18:/root
+
+rsync -azP -e "ssh -p 40023" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@50.115.47.83:/root
 
 ------------------------------------------------------------------------------------
 Welcome to your vast.ai container! This session is running in `tmux`.
@@ -189,10 +227,8 @@ To disable auto-tmux, run `touch ~/.no_auto_tmux` and reconnect. See also https:
 ------------------------------------------------------------------------------------
 
 # install python3.9...
-sudo apt update
-sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.9 -y
+sudo apt update && sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.9 -y
 python3.9 --version
 sudo apt install python3.9-dev -y
 
@@ -203,31 +239,24 @@ pip3 install virtualenv
 # install packages...
 git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
 virtualenv -p python3.9 venv && source venv/bin/activate
-# pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
+
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
 pip3 install -r requirements.txt
-# install flash attention (?)
 pip3 install flash-attn --no-build-isolation
-sudo apt-get install git-lfs
-git lfs install
+
+sudo apt-get install git-lfs && git lfs install
+
+export HUG_READ_TOKEN=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
+huggingface-cli login --token $HUG_READ_TOKEN
 
 # download model ####xxxx git clone git@hf.co:davidsvaughn/llamav2-70b-4.0bpw
 git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 -> davidsvaughn@gmail.com
 -> 5*gY8kpauf23.Wp
 
+
 # run!!!
-python gen_feedback.py -m llamav2-70b-4.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 10 -l 1024
+## python gen_feedback.py -m llamav2-70b-4.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 10 -l 1024
 
-python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 5 -l 1024 -I 0 -J 10
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 10 -l 1024 -I 0 -J 2000
 
-
---- ??? -----------------------------------------------------------------------------------------------------
-# login huggingface...
-export HUG_READ_TOKEN=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
-huggingface-cli login --token $HUG_READ_TOKEN
-# ????
-git clone https://"davidsvaughn@gmail.com":5*gY8kpauf23.Wp@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
-git clone https://"$HUG_READ_TOKEN"@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
-git clone https://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@huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
--------------------------------------------------------------------------------------------------------------
