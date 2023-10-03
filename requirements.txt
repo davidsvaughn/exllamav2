@@ -16,8 +16,8 @@ sentencepiece>=0.1.99
 
 # safetensors>=0.3.1
 # tokenizers==0.13.3
-# datasets>=2.9.0
-# matplotlib
+datasets>=2.9.0
+matplotlib
 # loralib
 ### flash attn
 # trl==0.4.7

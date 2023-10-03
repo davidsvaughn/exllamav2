@@ -140,7 +140,7 @@ def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
 
         num_tok = 1.4*len(prompt.split())
         if maxtok>0 and num_tok>maxtok:
-            print(num_tok)
+            # print(num_tok)
             continue
         
         item = adict( {'id':uid,
