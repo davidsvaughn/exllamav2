@@ -159,7 +159,9 @@ ssh -i $LAMBDA_PEM $LIP
 ## copy data !!!
 rsync -azP -e "ssh -i $LAMBDA_PEM" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data $LIP:/home/ubuntu
 
------------------
+## retrieve data !!!
+rsync -azP -e "ssh -i $LAMBDA_PEM" $LIP:/home/ubuntu/exllamav2/llama*.txt /home/david/code/davidsvaughn/LLM-utils/exllamav2/samples/h100
+
 ------------------------------------------------
 # install python3.9
 sudo apt update && sudo apt install software-properties-common -y
@@ -189,7 +191,7 @@ git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 -> davidsvaughn@gmail.com
 -> 5*gY8kpauf23.Wp
 
-python sample_feedback.py -m llamav2-70b-4.0bpw -d "/home/ubuntu/data" -n 10 -l 1024 -I 0 -J 2000
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/home/ubuntu/data" -n 8 -l 1024 -I 0 -J 10000
 
 
 ============================================================================
@@ -216,9 +218,10 @@ ssh -p 11528 root@149.11.242.18 -L 8080:localhost:8080
 ssh -p 40023 root@50.115.47.83 -L 8080:localhost:8080
 
 ## copy data !!!
-rsync -azP -e "ssh -p 11528" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@149.11.242.18:/root
-
 rsync -azP -e "ssh -p 40023" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@50.115.47.83:/root
+
+## retrieve data !!!
+rsync -azP -e "ssh -p 40023" root@50.115.47.83:/root/exllamav2/llama*.txt /home/david/code/davidsvaughn/LLM-utils/exllamav2/samples/a100
 
 ------------------------------------------------------------------------------------
 Welcome to your vast.ai container! This session is running in `tmux`.
@@ -258,5 +261,5 @@ git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 # run!!!
 ## python gen_feedback.py -m llamav2-70b-4.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 10 -l 1024
 
-python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 10 -l 1024 -I 0 -J 2000
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 8 -l 1024 -I 10000 -J 20000
 

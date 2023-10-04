@@ -61,7 +61,7 @@ def get_filenames(path, ext='.txt', noext=False):
         x = np.array([f.replace(ext,'') for f in x])
     return x
 
-def sentence_span(span, sidx, text, sbuf=[0,0], maxtok=-1):
+def sentence_span(span, sidx, text, sbuf=[0,0], maxtok=-1, q=1.4):
     b1,b2 = sbuf
     while True:
         i = (sidx<=span[0]).sum()-1
@@ -71,7 +71,7 @@ def sentence_span(span, sidx, text, sbuf=[0,0], maxtok=-1):
         s = text[sidx[i]:sidx[j]]
         if maxtok<0 or i==0 or b1==0:
             break
-        if len(s.split()) <= maxtok:
+        if q*len(s.split()) <= maxtok:
             break
         b1 -= 1
     return s
@@ -92,13 +92,20 @@ enclosed in brackets.  Please focus your feedback on the excerpt only, and not o
 as a whole.
 Here is the context: \
     """
-# UID = 0
+UID = 0
 def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
-    # global UID
+    global UID
     text = data['text']
     sidx = np.array(data['sent_idx'])
     fid = file_name.split('.')[0]
     items = []
+
+    (txt1, txt2) = (instruct_long, context_long)
+    # (txt1, txt2) = (instruct_short, context_short)
+
+    q = 1.4
+    N = q * len(txt1.split() + txt2.split())
+
     for i,fb in enumerate(data['feedback']):
         fb = adict(fb)
         
@@ -106,7 +113,7 @@ def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
         if len(fb.comment.split())>maxtok_output: continue
         
         section = sentence_span(fb.span, sidx, text).strip()
-        n = len(section.split())
+        n = N + q * len(section.split())
         
         context = sentence_span(fb.span, sidx, text, sbuf=sbuf, maxtok=maxtok-n).strip()
         # enclose section in brackets
@@ -115,15 +122,15 @@ def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
             sys.exit()
         context = context.replace(section, f' [ {section} ] ')
 
-        num_tok = 1.4*(n+len(context.split()))
-        if maxtok>0 and num_tok>maxtok: continue
+        num_tok = N + q * len(context.split())
+        if maxtok>0 and num_tok>maxtok:
+            UID += 1
+            continue
     
         # uid = UID = UID+1
         uid = f'{fid}.{i}'
         
-        ##########################
-        (txt1, txt2) = (instruct_long, context_long)
-        # (txt1, txt2) = (instruct_short, context_short)
+        ##########################################
 
         ## prior and post context:
         essay = context if context else ''
@@ -162,8 +169,6 @@ def load_feedback_data(data_path, sbuf=[20,-1], maxtok=600, split=0.98, seed=123
     random.seed(seed)
     train_data, test_data, N = [],[],[]
     for i,fn in enumerate(json_files):
-        # print(f'{i}/{len(json_files)} :\t{fn}')
-        # if '61727_11' in fn: print('HAH!')
         data = read_json(data_path + fn)
         items = parse_feedback(data, sbuf, maxtok=maxtok, file_name=fn)
         if random.random() < abs(split):
@@ -371,18 +376,19 @@ if __name__ == "__main__":
 
     dataset = load_feedback_dataset(data_path='/home/david/code/davidsvaughn/LLM-utils/llama2/code/data', 
                                     split=1, 
-                                    sbuf = [8,5], 
+                                    sbuf = [10,6],
                                     tokenize=False, 
                                     max_seq_length=1024, 
                                     shuffle=False)
+    
+    print(UID)
 
-    for sample in dataset:
-        uid = sample["id"]
-        text = sample["text"]
-        n = text.index('### Answer')
-        prompt = text[:n+10].strip()
-        feedback = text[n+10:].replace('</s>','').strip()
-
-        # print(prompt)
-        print()
+    # for sample in dataset:
+    #     uid = sample["id"]
+    #     text = sample["text"]
+    #     n = text.index('### Answer')
+    #     prompt = text[:n+10].strip()
+    #     feedback = text[n+10:].replace('</s>','').strip()
+    #     # print(prompt)
+    #     print()
     

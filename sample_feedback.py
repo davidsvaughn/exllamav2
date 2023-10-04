@@ -87,7 +87,7 @@ random.seed(seed)
 
 dataset = load_feedback_dataset(data_path=args.data,
                                 split=1, 
-                                sbuf = [8,5], 
+                                sbuf = [10,6], 
                                 tokenize=False, 
                                 max_seq_length=args.length, # 1024
                                 shuffle=False)
