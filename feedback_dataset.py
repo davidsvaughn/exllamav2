@@ -92,9 +92,9 @@ enclosed in brackets.  Please focus your feedback on the excerpt only, and not o
 as a whole.
 Here is the context: \
     """
-UID = 0
+# UID = 0
 def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
-    global UID
+    # global UID
     text = data['text']
     sidx = np.array(data['sent_idx'])
     fid = file_name.split('.')[0]
@@ -124,7 +124,7 @@ def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
 
         num_tok = N + q * len(context.split())
         if maxtok>0 and num_tok>maxtok:
-            UID += 1
+            # UID += 1
             continue
     
         # uid = UID = UID+1
@@ -145,7 +145,7 @@ def parse_feedback(data, sbuf, maxtok=-1, maxtok_output=80, file_name=None):
 """
         prompt = "\n\n".join([i for i in [instruction, context, response] if i is not None])
 
-        num_tok = 1.4*len(prompt.split())
+        num_tok = q * len(prompt.split())
         if maxtok>0 and num_tok>maxtok:
             # print(num_tok)
             continue
@@ -381,14 +381,14 @@ if __name__ == "__main__":
                                     max_seq_length=1024, 
                                     shuffle=False)
     
-    print(UID)
+    # print(UID)
 
-    # for sample in dataset:
-    #     uid = sample["id"]
-    #     text = sample["text"]
-    #     n = text.index('### Answer')
-    #     prompt = text[:n+10].strip()
-    #     feedback = text[n+10:].replace('</s>','').strip()
-    #     # print(prompt)
-    #     print()
+    for sample in dataset:
+        uid = sample["id"]
+        text = sample["text"]
+        n = text.index('### Answer')
+        prompt = text[:n+10].strip()
+        feedback = text[n+10:].replace('</s>','').strip()
+        print(prompt)
+        break
     
