@@ -213,15 +213,13 @@ vastai create instance 7112000 --image nvidia/cuda:12.0.1-devel-ubuntu20.04 --di
 
 ------------------------------------------------------------------------------------
 
-ssh -p 11528 root@149.11.242.18 -L 8080:localhost:8080
-
-ssh -p 40023 root@50.115.47.83 -L 8080:localhost:8080
+ssh -p 50219 root@145.14.10.31 -L 8080:localhost:8080
 
 ## copy data !!!
-rsync -azP -e "ssh -p 40023" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@50.115.47.83:/root
+rsync -azP -e "ssh -p 50219" /home/david/code/davidsvaughn/LLM-utils/llama2/code/data root@145.14.10.31:/root
 
 ## retrieve data !!!
-rsync -azP -e "ssh -p 40023" root@50.115.47.83:/root/exllamav2/llama*.txt /home/david/code/davidsvaughn/LLM-utils/exllamav2/samples/a100
+rsync -azP -e "ssh -p 50219" root@145.14.10.31:/root/exllamav2/llama*.txt /home/david/code/davidsvaughn/LLM-utils/exllamav2/samples/a100
 
 ------------------------------------------------------------------------------------
 Welcome to your vast.ai container! This session is running in `tmux`.
@@ -243,7 +241,8 @@ pip3 install virtualenv
 git clone https://github.com/davidsvaughn/exllamav2 && cd exllamav2
 virtualenv -p python3.9 venv && source venv/bin/activate
 
-pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+## pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu118
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu121
 pip3 install -r requirements.txt
 pip3 install flash-attn --no-build-isolation
 
@@ -261,5 +260,7 @@ git clone https://huggingface.co/davidsvaughn/llamav2-70b-4.0bpw
 # run!!!
 ## python gen_feedback.py -m llamav2-70b-4.0bpw -p "prompts/prompt3.txt" -tm 0.7 -tk 50 -tp 0.95 -n 10 -l 1024
 
-python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 8 -l 1024 -I 10000 -J 20000
+# python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 5 -l 1024 -I 10000 -J 20000
+
+python sample_feedback.py -m llamav2-70b-4.0bpw -d "/root/data" -n 5 -l 1024 -I 12310 -J 20000
 
